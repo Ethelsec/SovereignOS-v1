@@ -1,0 +1,13 @@
+title-text: ""
+
+desktop-image: "background.png"
+
++ boot_menu {
+    left = 25%
+    top = 25%
+    width = 50%
+    height = 50%
+    item_font = "DejaVu Sans 14"
+    item_color = "#ffffff"
+    selected_item_color = "#00ffff"
+}

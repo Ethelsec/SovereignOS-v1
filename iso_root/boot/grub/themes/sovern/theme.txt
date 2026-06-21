@@ -1,0 +1,5 @@
+desktop-image: "background.png"
+
+title-text: "SOVERN OS"
+title-font: "unicode"
+title-color: "#FFFFFF"

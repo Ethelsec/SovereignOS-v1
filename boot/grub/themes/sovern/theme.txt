@@ -1,0 +1,36 @@
+title-text: ""
+
+desktop-image: "background.png"
+
++ boot_menu {
+    left = 50%
+    top = 50%
+    right = 50%
+    
+
+
+    width = 100%
+    height = 100%
+
+    align = "center"
+
+    item_font = "menu"
+    item_color = "#A0A0A0"
+    selected_item_color = "#00FFD5"
+    selected_item_pixmap_style = "highlight"
+
+    item_height = 12
+    item_spacing = 34
+
+    scrollbar = false
+}
+
++ label {
+    text = "SOVERN OS Community Edition v1.0"
+    color = "#808080"
+
+    left = 50%
+    top = 90%
+
+    align = "center"
+}

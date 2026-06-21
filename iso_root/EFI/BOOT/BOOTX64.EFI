@@ -1,0 +1,4 @@
+grub-mkstandalone \
+  -O x86_64-efi \
+  -o BOOTX64.EFI \
+  boot/grub/grub.cfg
