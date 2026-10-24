@@ -1,17 +1,17 @@
-Start testing: Oct 24 14:28 CDT
+Start testing: Oct 24 15:51 CDT
 ----------------------------------------------------------
 1/12 Testing: test_buffer
 1/12 Test: test_buffer
 Command: "/home/barok/Project/gods-eye/collector/build/test_buffer"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_buffer" start time: Oct 24 14:28 CDT
+"test_buffer" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_buffer" end time: Oct 24 14:28 CDT
+"test_buffer" end time: Oct 24 15:51 CDT
 "test_buffer" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -19,14 +19,14 @@ Test Passed.
 2/12 Test: test_parser
 Command: "/home/barok/Project/gods-eye/collector/build/test_parser"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_parser" start time: Oct 24 14:28 CDT
+"test_parser" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_parser" end time: Oct 24 14:28 CDT
+"test_parser" end time: Oct 24 15:51 CDT
 "test_parser" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -34,14 +34,14 @@ Test Passed.
 3/12 Test: test_storage
 Command: "/home/barok/Project/gods-eye/collector/build/test_storage"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_storage" start time: Oct 24 14:28 CDT
+"test_storage" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_storage" end time: Oct 24 14:28 CDT
+"test_storage" end time: Oct 24 15:51 CDT
 "test_storage" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -49,14 +49,14 @@ Test Passed.
 4/12 Test: test_exporter
 Command: "/home/barok/Project/gods-eye/collector/build/test_exporter"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_exporter" start time: Oct 24 14:28 CDT
+"test_exporter" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_exporter" end time: Oct 24 14:28 CDT
+"test_exporter" end time: Oct 24 15:51 CDT
 "test_exporter" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -64,14 +64,14 @@ Test Passed.
 5/12 Test: test_correlator
 Command: "/home/barok/Project/gods-eye/collector/build/test_correlator"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_correlator" start time: Oct 24 14:28 CDT
+"test_correlator" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_correlator" end time: Oct 24 14:28 CDT
+"test_correlator" end time: Oct 24 15:51 CDT
 "test_correlator" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -79,14 +79,14 @@ Test Passed.
 6/12 Test: test_dashboard
 Command: "/home/barok/Project/gods-eye/collector/build/test_dashboard"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_dashboard" start time: Oct 24 14:28 CDT
+"test_dashboard" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"test_dashboard" end time: Oct 24 14:28 CDT
+"test_dashboard" end time: Oct 24 15:51 CDT
 "test_dashboard" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -94,14 +94,14 @@ Test Passed.
 7/12 Test: test_configuration
 Command: "/home/barok/Project/gods-eye/collector/build/test_configuration"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_configuration" start time: Oct 24 14:28 CDT
+"test_configuration" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_configuration" end time: Oct 24 14:28 CDT
+"test_configuration" end time: Oct 24 15:51 CDT
 "test_configuration" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -109,14 +109,14 @@ Test Passed.
 8/12 Test: test_memory_pool
 Command: "/home/barok/Project/gods-eye/collector/build/test_memory_pool"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_memory_pool" start time: Oct 24 14:28 CDT
+"test_memory_pool" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_memory_pool" end time: Oct 24 14:28 CDT
+"test_memory_pool" end time: Oct 24 15:51 CDT
 "test_memory_pool" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -124,14 +124,14 @@ Test Passed.
 9/12 Test: test_utilities
 Command: "/home/barok/Project/gods-eye/collector/build/test_utilities"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_utilities" start time: Oct 24 14:28 CDT
+"test_utilities" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_utilities" end time: Oct 24 14:28 CDT
+"test_utilities" end time: Oct 24 15:51 CDT
 "test_utilities" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -139,14 +139,14 @@ Test Passed.
 10/12 Test: test_ingest_pipeline
 Command: "/home/barok/Project/gods-eye/collector/build/test_ingest_pipeline"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_ingest_pipeline" start time: Oct 24 14:28 CDT
+"test_ingest_pipeline" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_ingest_pipeline" end time: Oct 24 14:28 CDT
+"test_ingest_pipeline" end time: Oct 24 15:51 CDT
 "test_ingest_pipeline" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -154,14 +154,14 @@ Test Passed.
 11/12 Test: test_canonical
 Command: "/home/barok/Project/gods-eye/collector/build/test_canonical"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_canonical" start time: Oct 24 14:28 CDT
+"test_canonical" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_canonical" end time: Oct 24 14:28 CDT
+"test_canonical" end time: Oct 24 15:51 CDT
 "test_canonical" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -169,15 +169,15 @@ Test Passed.
 12/12 Test: test_ingress
 Command: "/home/barok/Project/gods-eye/collector/build/test_ingress"
 Directory: /home/barok/Project/gods-eye/collector/build
-"test_ingress" start time: Oct 24 14:28 CDT
+"test_ingress" start time: Oct 24 15:51 CDT
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.18 sec
+Test time =   0.16 sec
 ----------------------------------------------------------
 Test Passed.
-"test_ingress" end time: Oct 24 14:28 CDT
+"test_ingress" end time: Oct 24 15:51 CDT
 "test_ingress" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 24 14:28 CDT
+End testing: Oct 24 15:51 CDT
