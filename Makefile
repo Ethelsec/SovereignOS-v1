@@ -16,29 +16,29 @@ test:
 
 start:
 	@echo "Starting God's Eye in background..."
-	@mkdir -p /var/log/gods_eye
-	@./collector/build/collector --ingest-socket /tmp/gods_eye.sock --storage /var/log/gods_eye/telemetry.tpbin --log-level info &
-	@echo $$! > /tmp/gods_eye.pid
-	@echo "Started with PID: $$(cat /tmp/gods_eye.pid)"
-	@echo "Socket: /tmp/gods_eye.sock"
-	@echo "Storage: /var/log/gods_eye/telemetry.tpbin"
+	@mkdir -p /home/barok/gods_eye_logs
+	@./collector/build/collector --ingest-socket /home/barok/.gods_eye.sock --storage /home/barok/gods_eye_logs/telemetry.tpbin --log-level info &
+	@echo $$! > /home/barok/.gods_eye.pid
+	@echo "Started with PID: $$(cat /home/barok/.gods_eye.pid)"
+	@echo "Socket: /home/barok/.gods_eye.sock"
+	@echo "Storage: /home/barok/gods_eye_logs/telemetry.tpbin"
 
 stop:
 	@echo "Stopping God's Eye..."
-	@if [ -f /tmp/gods_eye.pid ]; then kill $$(cat /tmp/gods_eye.pid) 2>/dev/null; rm /tmp/gods_eye.pid; echo "Stopped"; else echo "Not running"; fi
+	@if [ -f /home/barok/.gods_eye.pid ]; then kill $$(cat /home/barok/.gods_eye.pid) 2>/dev/null; rm /home/barok/.gods_eye.pid; echo "Stopped"; else echo "Not running"; fi
 
 status:
 	@echo "Checking status..."
-	@if [ -f /tmp/gods_eye.pid ] && kill -0 $$(cat /tmp/gods_eye.pid) 2>/dev/null; then echo "Running (PID: $$(cat /tmp/gods_eye.pid))"; else echo "Not running"; fi
+	@if [ -f /home/barok/.gods_eye.pid ] && kill -0 $$(cat /home/barok/.gods_eye.pid) 2>/dev/null; then echo "Running (PID: $$(cat /home/barok/.gods_eye.pid))"; else echo "Not running"; fi
 
 replay:
-	@./collector/build/collector --replay /var/log/gods_eye/telemetry.tpbin 2>&1 | tail -20
+	@./collector/build/collector --replay /home/barok/gods_eye_logs/telemetry.tpbin 2>&1 | tail -20
 
 verify:
-	@./collector/build/collector --verify /var/log/gods_eye/telemetry.tpbin 2>&1 | tail -2
+	@./collector/build/collector --verify /home/barok/gods_eye_logs/telemetry.tpbin 2>&1 | tail -2
 
 clean:
-	@rm -rf collector/build reports/*.tpbin /var/log/gods_eye/* /tmp/gods_eye.* 2>&1 | tail -2
+	@rm -rf collector/build reports/*.tpbin /home/barok/gods_eye_logs/* /home/barok/.gods_eye.* 2>&1 | tail -2
 	@echo "Cleaned"
 
 help:
