@@ -1,13 +1,13 @@
-test_buffer 3 0.00181319
-test_parser 3 0.00131519
-test_storage 3 0.00132562
-test_exporter 3 0.0015461
-test_correlator 3 0.00278253
-test_dashboard 3 0.00552733
-test_configuration 3 0.00348872
-test_memory_pool 3 0.00421894
-test_utilities 3 0.000405802
-test_ingest_pipeline 3 0.000391887
-test_canonical 3 0.00042073
-test_ingress 3 0.0530994
+test_buffer 4 0.00106657
+test_parser 4 0.000958722
+test_storage 4 0.00677122
+test_exporter 4 0.00106425
+test_correlator 4 0.00365909
+test_dashboard 4 0.00636743
+test_configuration 4 0.000877768
+test_memory_pool 4 0.000819322
+test_utilities 4 0.00120156
+test_ingest_pipeline 4 0.00110207
+test_canonical 4 0.00101595
+test_ingress 4 0.0464706
 ---
