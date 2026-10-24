@@ -1,1 +1,44 @@
+# Build directories
+build/
+*.o
+*.a
+*.so
+*.exe
+
+# Temporary files
+*.tmp
+*.log
+/tmp/
+/var/tmp/
+
+# ML training (not to push)
 not_to_be_pushed_only_ML_training/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs
+*.tpbin
+telemetry-summary.json
+
+# Keys and secrets
+*.key
+*.pem
+secrets/
+
+# Large artifacts
+*.zip
+*.tar.gz
