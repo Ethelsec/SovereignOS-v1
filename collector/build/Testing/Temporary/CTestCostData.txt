@@ -1,0 +1,13 @@
+test_buffer 2 0.00201002
+test_parser 2 0.0019912
+test_storage 2 0.00203544
+test_exporter 2 0.00203478
+test_correlator 2 0.00433123
+test_dashboard 2 0.002532
+test_configuration 2 0.00251285
+test_memory_pool 2 0.00399747
+test_utilities 2 0.0023276
+test_ingest_pipeline 2 0.00224496
+test_canonical 2 0.0014073
+test_ingress 2 0.087761
+---

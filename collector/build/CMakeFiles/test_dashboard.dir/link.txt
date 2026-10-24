@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/test_dashboard.dir/link.d CMakeFiles/test_dashboard.dir/test_dashboard.c.o -o test_dashboard  libcollector_core.a -lpthread /usr/lib/x86_64-linux-gnu/libz.so

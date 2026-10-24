@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/test_parser.dir/link.d CMakeFiles/test_parser.dir/test_parser.c.o -o test_parser  libcollector_core.a -lpthread /usr/lib/x86_64-linux-gnu/libz.so

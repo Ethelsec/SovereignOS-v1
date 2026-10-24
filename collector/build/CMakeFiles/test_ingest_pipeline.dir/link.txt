@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/test_ingest_pipeline.dir/link.d CMakeFiles/test_ingest_pipeline.dir/test_ingest_pipeline.c.o -o test_ingest_pipeline  libcollector_core.a -lpthread /usr/lib/x86_64-linux-gnu/libz.so

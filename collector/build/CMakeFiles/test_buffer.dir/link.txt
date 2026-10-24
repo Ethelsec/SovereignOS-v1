@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/test_buffer.dir/link.d CMakeFiles/test_buffer.dir/test_buffer.c.o -o test_buffer  libcollector_core.a -lpthread /usr/lib/x86_64-linux-gnu/libz.so

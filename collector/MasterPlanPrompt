@@ -1,0 +1,3731 @@
+Great. I'll write this as if it were a professional Software Requirements Specification (SRS) that an advanced coding model can follow. Each part flows directly into the next, and **nothing will be summarized or intentionally omitted**.
+
+---
+
+# MASTER PROJECT PROMPT
+
+## Part 1 of 5
+
+---
+
+# Complete Production-Grade Linux Telemetry Collection, Processing, Correlation, Analysis, and OpenTelemetry Export Platform
+
+You are an expert Linux Kernel Developer, Systems Programmer, eBPF Engineer, Distributed Systems Engineer, OpenTelemetry Engineer, Performance Engineer, Security Engineer, Software Architect, and C Systems Programmer.
+
+Your objective is to generate an entire production-quality project written in **C17** that implements a complete Linux telemetry collection platform capable of receiving data from numerous telemetry probes, processing that data in real time, correlating events, detecting anomalies, exporting telemetry in OpenTelemetry format, storing telemetry locally, and presenting live telemetry analysis through a terminal dashboard.
+
+The final result must resemble software that could realistically be deployed in production on enterprise Linux systems.
+
+This is **not** a proof of concept.
+
+This is **not** sample code.
+
+This is **not** pseudocode.
+
+This is a complete production-ready software project.
+
+---
+
+# Overall Goal
+
+Develop a complete telemetry collection and behavioral analysis engine capable of continuously collecting telemetry from multiple kernel and userspace sources.
+
+The application must:
+
+* continuously collect telemetry
+* normalize incoming telemetry
+* correlate related events
+* reconstruct process activity
+* identify system behavior
+* detect anomalies
+* detect resource spikes
+* determine causal relationships between events
+* export telemetry using OpenTelemetry
+* store telemetry locally
+* present live telemetry in a terminal dashboard
+* recover gracefully from failures
+* maximize throughput while minimizing latency
+
+The application should be modular, efficient, thread-safe, extensible, and maintainable.
+
+---
+
+# Target Platform
+
+Operating System:
+
+Linux
+
+Kernel Version:
+
+6.x or newer
+
+Architectures:
+
+* x86_64
+* ARM64
+
+The software should rely on modern Linux kernel facilities whenever possible.
+
+---
+
+# Programming Language
+
+Use:
+
+* C17
+
+Do **not** use C++.
+
+Use modern POSIX APIs.
+
+Use Linux system programming techniques.
+
+---
+
+# Preferred Libraries
+
+Use appropriate production-quality libraries where applicable.
+
+Examples include:
+
+* libbpf
+* pthread
+* protobuf-c
+* OpenTelemetry C SDK
+* zlib
+* libelf
+* libcap
+* json-c (only if configuration serialization is needed)
+
+Do not introduce unnecessary dependencies.
+
+---
+
+# Required Linux APIs
+
+Use appropriate Linux APIs such as:
+
+* pthread
+* mmap
+* munmap
+* shm_open
+* epoll
+* eventfd
+* timerfd
+* signalfd
+* poll
+* pipe
+* socket
+* recvmsg
+* sendmsg
+* splice
+* vmsplice
+* read
+* write
+* pread
+* pwrite
+* open
+* close
+* ioctl
+* fcntl
+* stat
+* clock_gettime
+
+Use zero-copy APIs whenever appropriate.
+
+---
+
+# General Design Philosophy
+
+The software should prioritize:
+
+* performance
+* reliability
+* maintainability
+* modularity
+* portability
+* extensibility
+* observability
+* defensive programming
+* thread safety
+* efficient memory usage
+* minimal allocations
+* cache friendliness
+
+---
+
+# High-Level Architecture
+
+The project consists of the following major subsystems.
+
+---
+
+## Telemetry Probe Layer
+
+Responsible for generating telemetry.
+
+Supported telemetry sources include:
+
+* eBPF
+* Tracepoints
+* Raw Tracepoints
+* Kprobes
+* Kretprobes
+* Uprobes
+* Uretprobes
+* Syscall Hooks
+* XDP
+* Traffic Control (TC)
+* Perf Events
+* Ring Buffer
+* Perf Buffer
+* Userspace instrumentation
+* Network transmission collector
+* Future Windows ETW compatibility layer
+* Future custom probes
+
+Every telemetry source should ultimately produce a common telemetry event.
+
+---
+
+## Shared Memory Layer
+
+Responsible for transporting telemetry from probes to userspace.
+
+Requirements:
+
+* shared memory
+* high throughput
+* lock-free where practical
+* multiple producers
+* single consumer
+* configurable capacity
+* overflow handling
+* corruption detection
+* event ordering
+* timestamp preservation
+* sequence numbers
+
+---
+
+## Processing Layer
+
+Responsible for:
+
+* decoding events
+* validating events
+* normalizing events
+* classifying events
+* filtering events
+* enriching events
+* correlating events
+
+---
+
+## Analysis Layer
+
+Responsible for:
+
+* behavioral analysis
+* anomaly detection
+* process timeline reconstruction
+* event correlation
+* dependency reconstruction
+* resource spike detection
+* causal relationship analysis
+
+---
+
+## Storage Layer
+
+Responsible for:
+
+* writing telemetry
+* rotating files
+* integrity verification
+* indexing
+* replay
+
+---
+
+## Export Layer
+
+Responsible for:
+
+* OpenTelemetry conversion
+* OTLP export
+* protobuf serialization
+* batching
+* retries
+
+---
+
+## User Interface Layer
+
+Responsible for:
+
+* logging
+* live dashboard
+* statistics
+* health monitoring
+
+---
+
+# eBPF Requirements
+
+The telemetry system must standardize around modern eBPF.
+
+Use:
+
+* CO-RE (Compile Once – Run Everywhere)
+* libbpf
+* BTF
+* BPF Skeletons
+* bpftool generated skeletons
+
+Avoid legacy BCC where possible.
+
+The eBPF programs should be separated logically according to responsibility.
+
+---
+
+## Required Hooks
+
+Support:
+
+Tracepoints
+
+Raw Tracepoints
+
+Kprobes
+
+Kretprobes
+
+Uprobes
+
+Uretprobes
+
+LSM hooks where applicable
+
+Perf Events
+
+Syscall Tracepoints
+
+Network Tracepoints
+
+XDP
+
+Traffic Control ingress
+
+Traffic Control egress
+
+Socket Filters
+
+Cgroup hooks where appropriate
+
+---
+
+# Kernel Events
+
+Collect telemetry regarding:
+
+Process creation
+
+Process termination
+
+Thread creation
+
+Thread exit
+
+Fork
+
+Execve
+
+Clone
+
+Exit
+
+Signals
+
+Scheduling
+
+Context switches
+
+Priority changes
+
+Namespaces
+
+Cgroups
+
+Capabilities
+
+Kernel modules
+
+Kernel warnings
+
+OOM killer
+
+Memory allocation
+
+Page faults
+
+Swap
+
+NUMA
+
+CPU scheduling
+
+Interrupts
+
+Soft IRQ
+
+Hard IRQ
+
+Kernel networking
+
+VFS operations
+
+Filesystem activity
+
+Socket lifecycle
+
+TCP state transitions
+
+UDP events
+
+Pipe events
+
+Device events
+
+Block layer
+
+Mount operations
+
+Security events
+
+LSM notifications where available
+
+---
+
+# Userspace Events
+
+Collect telemetry regarding:
+
+Executable path
+
+Working directory
+
+Environment variables
+
+Command line
+
+Parent process
+
+Child process
+
+Loaded shared libraries
+
+Memory usage
+
+Heap allocations where observable
+
+CPU usage
+
+Thread information
+
+Open files
+
+File descriptors
+
+IPC
+
+Shared memory
+
+Sockets
+
+Network activity
+
+Signal handling
+
+Library loading
+
+Runtime metadata
+
+---
+
+# Network Telemetry
+
+Collect telemetry regarding:
+
+TCP
+
+UDP
+
+ICMP
+
+DNS
+
+HTTP metadata
+
+HTTPS metadata where observable
+
+TLS handshake metadata
+
+Connections
+
+Accept
+
+Listen
+
+Bind
+
+Connect
+
+Close
+
+Packet statistics
+
+Retransmissions
+
+Latency
+
+Dropped packets
+
+Bandwidth
+
+Connection duration
+
+---
+
+# Future Extensibility
+
+The architecture should allow adding future telemetry providers without modifying the core engine.
+
+Implement a plugin-oriented architecture.
+
+Every telemetry source should implement a common interface.
+
+The processing engine should not need to know where events originated.
+
+Instead, all telemetry should be normalized before entering the correlation engine.
+
+---
+
+# Internal Telemetry Event Format
+
+Every telemetry source must ultimately be converted into one standardized internal event representation.
+
+Each event should contain sufficient metadata to support:
+
+* correlation
+* filtering
+* exporting
+* storage
+* replay
+* debugging
+* analytics
+
+Each telemetry event should include, at minimum:
+
+* Timestamp (high-resolution monotonic and wall-clock)
+* Event ID
+* Sequence Number
+* Event Type
+* Event Category
+* Source Probe
+* Source Module
+* PID
+* TID
+* PPID
+* UID
+* GID
+* CPU Core
+* NUMA Node (if available)
+* Host Identifier
+* Container Identifier (if applicable)
+* Namespace Information
+* Process Name
+* Executable Path
+* Command-Line Arguments
+* Thread Name
+* Session ID
+* Event Priority
+* Severity
+* Payload Size
+* Payload Pointer or Inline Payload
+* Flags
+* Correlation ID
+* Parent Correlation ID
+* Resource Attributes
+* Event Version
+
+The internal telemetry schema should be designed to be forward-compatible, allowing new fields to be added without breaking existing processing logic.
+
+---
+
+**End of Part 1 of 5**
+ 
+## MASTER PROJECT PROMPT
+
+# Part 2 of 5
+
+---
+
+# Shared Memory Communication Layer
+
+The telemetry collection system must use a **high-performance shared memory communication mechanism** between telemetry producers (eBPF programs, network collectors, userspace probes, future telemetry providers) and the userspace telemetry processing engine.
+
+The objective is to minimize overhead, avoid unnecessary copies, maximize throughput, and preserve event ordering while maintaining data integrity.
+
+The shared memory subsystem should be designed to sustain extremely high event rates while remaining thread-safe and resilient to transient overloads.
+
+---
+
+# Shared Memory Design Goals
+
+The shared memory subsystem should prioritize:
+
+* Very low latency
+* High throughput
+* Predictable performance
+* Minimal memory fragmentation
+* Cache-friendly memory layout
+* NUMA awareness where practical
+* False-sharing avoidance
+* Lock-free algorithms whenever practical
+* Zero-copy data transfer whenever feasible
+* Deterministic behavior
+* Graceful recovery after overflow conditions
+
+---
+
+# Ring Buffer Design
+
+Implement a production-quality ring buffer.
+
+Requirements:
+
+* Circular memory layout
+* Fixed-size allocation
+* Configurable capacity
+* Lock-free implementation where possible
+* Multiple producers
+* Single consumer
+* Atomic synchronization primitives
+* Cache-line alignment
+* Overflow detection
+* Underflow detection
+* Wrap-around handling
+* Memory barrier correctness
+* Sequence validation
+* Event ordering guarantees
+
+Each slot should maintain:
+
+* Sequence number
+* Write state
+* Read state
+* Timestamp
+* Payload size
+* Event metadata
+* Payload
+
+The implementation should detect:
+
+* Partial writes
+* Corrupted records
+* Invalid sequence numbers
+* Overwritten entries
+* Duplicate entries
+* Buffer exhaustion
+
+---
+
+# Memory Management
+
+The application should avoid frequent heap allocations.
+
+Implement reusable memory management techniques such as:
+
+* Memory pools
+* Object pools
+* Slab allocators where appropriate
+* Arena allocators for temporary processing
+* Preallocated buffers
+* Cache-friendly allocation strategies
+
+Minimize:
+
+* malloc()
+* calloc()
+* realloc()
+* free()
+
+during steady-state operation.
+
+---
+
+# Buffer Monitoring
+
+Continuously monitor the health of the shared memory buffer.
+
+Track:
+
+* Current utilization
+* Maximum utilization
+* Average utilization
+* Producer throughput
+* Consumer throughput
+* Event latency
+* Buffer occupancy
+* Buffer overruns
+* Dropped events
+* Recovery events
+* Corrupted records
+
+Generate warnings before the buffer becomes full.
+
+Example:
+
+```
+[!] Ring buffer utilization exceeded 80%
+```
+
+Generate critical warnings if the utilization exceeds configurable thresholds.
+
+---
+
+# Event Processing Pipeline
+
+Every telemetry event must pass through the following pipeline.
+
+No event should bypass any mandatory validation stage.
+
+Pipeline:
+
+1. Read event from shared memory
+2. Validate event header
+3. Verify sequence number
+4. Verify payload size
+5. Verify integrity
+6. Decode payload
+7. Parse metadata
+8. Normalize fields
+9. Classify event
+10. Enrich event
+11. Correlate with previous events
+12. Detect anomalies
+13. Determine event importance
+14. Decide whether to retain or discard
+15. Serialize into internal telemetry representation
+16. Export to OpenTelemetry
+17. Write to persistent storage
+18. Update statistics
+19. Remove event from buffer
+20. Release associated resources
+
+Every stage should expose timing metrics for performance analysis.
+
+---
+
+# Event Validation
+
+Before an event enters the processing pipeline, verify:
+
+* Event header integrity
+* Version compatibility
+* Event type validity
+* Payload length
+* Timestamp validity
+* Sequence continuity
+* Source identifier
+* Memory alignment
+* CRC or checksum if applicable
+
+Invalid events should never crash the application.
+
+Instead:
+
+* log the failure
+* discard the invalid event
+* continue processing
+
+---
+
+# Event Normalization
+
+All telemetry sources produce different formats.
+
+Normalize every event into one internal schema.
+
+Normalization should standardize:
+
+* timestamps
+* identifiers
+* process metadata
+* resource attributes
+* event categories
+* event severity
+* event naming
+* units of measurement
+* CPU identifiers
+* memory sizes
+* network addresses
+* filesystem paths
+
+All downstream components should operate only on normalized events.
+
+---
+
+# Event Classification
+
+Classify every event into one or more categories.
+
+Examples:
+
+Process
+
+Filesystem
+
+Network
+
+Scheduler
+
+Security
+
+Memory
+
+CPU
+
+Storage
+
+IPC
+
+Signals
+
+Container
+
+Virtualization
+
+Kernel
+
+Userspace
+
+Driver
+
+Device
+
+System
+
+Custom
+
+The classification system should support multiple categories per event.
+
+---
+
+# Event Enrichment
+
+Augment telemetry with additional contextual information.
+
+Examples include:
+
+Process ancestry
+
+Container metadata
+
+Namespace information
+
+Hostname
+
+Kernel version
+
+Executable metadata
+
+Hash of executable
+
+Parent process information
+
+Current resource usage
+
+Current system load
+
+User information
+
+Capabilities
+
+Environment metadata
+
+Security context
+
+The enrichment process should avoid blocking operations where possible.
+
+---
+
+# Correlation Engine
+
+Implement a comprehensive event correlation engine.
+
+Its responsibility is to reconstruct relationships between seemingly independent telemetry events.
+
+Correlation should include:
+
+Process ↔ Thread
+
+Parent ↔ Child
+
+Fork ↔ Exec
+
+Socket ↔ Process
+
+Connection ↔ File Descriptor
+
+File ↔ Process
+
+Memory Allocation ↔ Process
+
+Scheduler ↔ CPU
+
+Interrupt ↔ Driver
+
+Network Packet ↔ Socket
+
+Filesystem Event ↔ Mount
+
+Container ↔ Namespace
+
+Thread ↔ CPU Core
+
+Signal ↔ Process
+
+Module ↔ Kernel
+
+The engine should maintain efficient lookup structures to perform correlation with minimal latency.
+
+---
+
+# Process Timeline Reconstruction
+
+For every observed process, reconstruct a complete timeline.
+
+The timeline should include:
+
+Creation
+
+Fork
+
+Exec
+
+Thread creation
+
+Library loading
+
+Memory allocations
+
+File activity
+
+Socket activity
+
+Network activity
+
+Signals
+
+Privilege changes
+
+CPU usage
+
+Memory usage
+
+Disk I/O
+
+Network I/O
+
+Scheduler activity
+
+Termination
+
+Exit status
+
+Resource consumption
+
+The reconstructed timeline should be exportable as structured telemetry and human-readable summaries.
+
+---
+
+# Behavioral Analysis Engine
+
+The behavioral analysis engine should continuously inspect telemetry streams to identify patterns, trends, and relationships.
+
+The objective is not only to record events but also to understand how those events relate to overall system behavior.
+
+The engine should operate in real time.
+
+---
+
+# Resource Spike Detection
+
+Detect significant changes in:
+
+CPU utilization
+
+Memory consumption
+
+Disk throughput
+
+Disk latency
+
+Filesystem activity
+
+Network throughput
+
+Network latency
+
+Interrupt frequency
+
+Context switches
+
+Page faults
+
+Cache misses (if observable)
+
+Scheduler latency
+
+Each spike should be timestamped.
+
+---
+
+# Causal Analysis
+
+When a spike is detected, determine whether it is associated with nearby telemetry events.
+
+For example:
+
+Determine whether a process started immediately before a CPU spike.
+
+Determine whether memory allocations preceded a memory spike.
+
+Determine whether network connections preceded increased bandwidth usage.
+
+Determine whether filesystem activity preceded storage latency increases.
+
+Determine whether kernel modules were loaded before performance degradation.
+
+Compute temporal relationships between events.
+
+Example output:
+
+```
+Process firefox (PID 1842) started 38 milliseconds before CPU utilization increased by 54%.
+```
+
+or
+
+```
+Memory usage increased by 412 MB within 26 milliseconds after process postgres allocated anonymous memory.
+```
+
+or
+
+```
+Network throughput increased immediately following creation of 243 TCP connections.
+```
+
+---
+
+# Event Correlation Windows
+
+Support configurable correlation windows.
+
+Examples:
+
+10 milliseconds
+
+50 milliseconds
+
+100 milliseconds
+
+250 milliseconds
+
+500 milliseconds
+
+1 second
+
+5 seconds
+
+10 seconds
+
+Allow multiple windows simultaneously.
+
+---
+
+# Anomaly Detection
+
+Implement anomaly detection capable of identifying:
+
+Unexpected process trees
+
+Abnormal process spawning
+
+Memory leaks
+
+Excessive thread creation
+
+Runaway CPU usage
+
+Repeated crashes
+
+Repeated retries
+
+Excessive syscall frequency
+
+Unusual filesystem activity
+
+Unexpected network behavior
+
+Large bursts of telemetry
+
+Long scheduling delays
+
+Unexpected privilege escalation
+
+Repeated authentication failures
+
+Resource exhaustion
+
+Suspicious process behavior
+
+The anomaly engine should produce confidence scores.
+
+---
+
+# Event Filtering
+
+Not every event should be stored permanently.
+
+Implement configurable filtering.
+
+Classify events as:
+
+Critical
+
+High
+
+Normal
+
+Informational
+
+Debug
+
+Trace
+
+Duplicate
+
+Redundant
+
+Noise
+
+Discardable
+
+Allow configurable filtering policies.
+
+Examples:
+
+Discard duplicate scheduler events.
+
+Merge repetitive filesystem events.
+
+Collapse repeated network packets into summaries.
+
+Retain all security-related events.
+
+Always retain anomalies.
+
+---
+
+# Event Deduplication
+
+Implement duplicate detection.
+
+Support:
+
+Exact duplicates
+
+Near duplicates
+
+Repeated identical events
+
+Repeated scheduler events
+
+Repeated identical network events
+
+Repeated identical filesystem events
+
+Maintain configurable deduplication windows.
+
+---
+
+# Statistics Engine
+
+Continuously compute statistics.
+
+Track:
+
+Events received
+
+Events processed
+
+Events exported
+
+Events discarded
+
+Events duplicated
+
+Events correlated
+
+Events normalized
+
+Events enriched
+
+Anomalies detected
+
+Warnings generated
+
+Errors generated
+
+Average latency
+
+Maximum latency
+
+Minimum latency
+
+Processing throughput
+
+Export throughput
+
+Storage throughput
+
+CPU utilization
+
+Memory usage
+
+Buffer utilization
+
+Disk usage
+
+Network bandwidth
+
+These statistics will be displayed by the live dashboard and included in the final execution summary.
+
+---
+
+**End of Part 2 of 5**
+
+## MASTER PROJECT PROMPT
+ nalyze every stored event.
+
+Generate a final report including:
+
+Total telemetry received
+
+Total telemetry processed
+
+Total telemetry exported
+
+Total telemetry discarded
+
+Total anomalies
+
+Total warnings
+
+Total errors
+
+Average throughput
+
+Peak throughput
+
+Average CPU usage
+
+Average memory usage
+
+Peak memory usage
+
+Maximum buffer utilization
+
+Dropped events
+
+Recovered events
+
+Detected resource spikes
+
+Detected correlations
+
+Process timelines
+
+Security observations
+
+Storage statistics
+
+Export statistics
+
+Execution duration
+
+The report should be both human-readable and machine-readable.
+
+---
+
+# Logging System
+
+Implement a production-quality logging subsystem.
+
+Every subsystem should log meaningful events.
+
+Support log levels:
+
+SUCCESS
+
+INFO
+
+WARNING
+
+ERROR
+
+DEBUG
+
+TRACE
+
+FATAL
+
+---
+
+# Terminal Output Format
+
+Display logs in real time.
+
+Examples:
+
+```text
+[+] eBPF subsystem initialized successfully
+
+[+] Ring buffer attached
+
+[+] Telemetry received
+
+[+] Event normalized
+
+[+] Event correlated
+
+[+] Event exported
+
+[+] Event written to storage
+
+[!] Buffer utilization exceeded 80%
+
+[!] Duplicate telemetry detected
+
+[!] Retrying OTLP export
+
+[-] Failed to deserialize telemetry
+
+[-] Storage write failed
+
+[-] Invalid telemetry record removed
+```
+
+Each log should include:
+
+Timestamp
+
+Module
+
+Thread ID
+
+Severity
+
+CPU
+
+Optional Correlation ID
+
+Human-readable message
+
+Support ANSI color output.
+
+Allow colors to be disabled.
+
+Support configurable verbosity.
+
+---
+
+# Live Terminal Dashboard
+
+Implement a continuously updating terminal dashboard.
+
+The dashboard should update approximately once every second without excessive flickering.
+
+Display:
+
+Current CPU usage
+
+Current memory usage
+
+Current disk throughput
+
+Current network throughput
+
+Current telemetry throughput
+
+Current export throughput
+
+Current storage throughput
+
+Current buffer utilization
+
+Active telemetry sources
+
+Active probes
+
+Active processes
+
+Active threads
+
+Current anomalies
+
+Warnings
+
+Errors
+
+Dropped events
+
+Average processing latency
+
+Average export latency
+
+Average storage latency
+
+Current queue sizes
+
+Correlation engine status
+
+Exporter status
+
+Storage status
+
+Application uptime
+
+Support resizing of the terminal window gracefully.
+
+---
+
+# Configuration System
+
+Implement a configurable runtime configuration system.
+
+Support configuration through:
+
+Configuration file
+
+Environment variables
+
+Command-line arguments
+
+Reasonable defaults
+
+Configuration should include:
+
+Buffer size
+
+Worker thread count
+
+Export settings
+
+Storage path
+
+Log level
+
+Dashboard refresh interval
+
+Correlation windows
+
+Filtering rules
+
+Retention settings
+
+Retry settings
+
+Compression settings
+
+Performance tuning parameters
+
+---
+
+# Command-Line Interface
+
+Implement a complete CLI.
+
+Support options such as:
+
+Help
+
+Version
+
+Configuration file
+
+Storage location
+
+Enable dashboard
+
+Disable dashboard
+
+Enable export
+
+Disable export
+
+Enable debug logging
+
+Log level selection
+
+Buffer size override
+
+Worker count override
+
+Replay stored telemetry
+
+Verify telemetry files
+
+Print configuration
+
+The help output should be comprehensive and professionally formatted.
+
+---
+
+# Concurrency Architecture
+
+Design the application using multiple threads where beneficial.
+
+Possible worker threads include:
+
+Telemetry reader
+
+Telemetry decoder
+
+Normalizer
+
+Correlation engine
+
+Analysis engine
+
+Storage writer
+
+OTLP exporter
+
+Dashboard renderer
+
+Statistics collector
+
+Health monitor
+
+Configuration watcher
+
+Coordinate workers safely.
+
+Avoid race conditions.
+
+Avoid deadlocks.
+
+Minimize lock contention.
+
+Use lock-free structures where practical.
+
+---
+
+# Performance Optimization
+
+Optimize the entire system for production workloads.
+
+Prioritize:
+
+Low latency
+
+High throughput
+
+Cache locality
+
+Minimal heap allocations
+
+Batch processing
+
+Zero-copy transfers where feasible
+
+Efficient serialization
+
+False-sharing avoidance
+
+NUMA awareness where practical
+
+Memory reuse
+
+Avoid unnecessary system calls.
+
+Avoid unnecessary copies.
+
+Avoid unnecessary synchronization.
+
+---
+
+# Resource Management
+
+Every allocated resource must be released correctly.
+
+This includes:
+
+Memory
+
+Files
+
+Sockets
+
+Threads
+
+Mutexes
+
+Condition variables
+
+Semaphores
+
+Shared memory
+
+Ring buffers
+
+eBPF resources
+
+Maps
+
+Programs
+
+Links
+
+Exporters
+
+Protocol buffers
+
+Storage handles
+
+Dashboard resources
+
+Timers
+
+Signal handlers
+
+No memory leaks should exist.
+
+No file descriptor leaks should exist.
+
+---
+
+# Error Handling
+
+The application must never terminate unexpectedly because of malformed telemetry.
+
+Handle failures gracefully.
+
+Examples include:
+
+Buffer overflow
+
+Buffer corruption
+
+Invalid event
+
+Malformed payload
+
+Allocation failure
+
+Shared memory failure
+
+Thread creation failure
+
+Exporter failure
+
+Storage failure
+
+Serialization failure
+
+Deserialization failure
+
+Configuration errors
+
+Permission failures
+
+Missing eBPF support
+
+Kernel incompatibility
+
+Timeouts
+
+Interrupted system calls
+
+Partial writes
+
+Partial reads
+
+Filesystem full
+
+Disk unavailable
+
+Network unavailable
+
+Every failure should generate meaningful diagnostic information.
+
+Where recovery is possible, automatically recover and continue operation.
+
+---
+
+# Health Monitoring
+
+Implement an internal health monitoring subsystem.
+
+Continuously monitor:
+
+Worker threads
+
+Queue depths
+
+Exporter health
+
+Storage health
+
+Memory usage
+
+CPU usage
+
+Thread liveness
+
+Buffer health
+
+Configuration validity
+
+Subsystem initialization status
+
+Report unhealthy components immediately.
+
+Attempt recovery where practical.
+
+---
+
+**End of Part 3 of 5**
+
+**Part 4** will define the **strict code-generation rules**, the **single-root project layout**, the **"absolutely no placeholder code" requirements**, complete CMake build system requirements, unit testing requirements, and the exhaustive implementation constraints that ensure the AI generates every line of code rather than skeletons or comments.
+
+# Part 3 of 5
+
+---
+
+# OpenTelemetry Integration
+
+The telemetry platform must use **OpenTelemetry (OTel)** as its canonical telemetry model and **OpenTelemetry Protocol (OTLP)** as its primary export mechanism.
+
+The application should internally normalize all telemetry into an OpenTelemetry-compatible representation before exporting or persisting it.
+
+The implementation should follow current OpenTelemetry semantic conventions wherever applicable while remaining modular enough to support future specification updates.
+
+---
+
+# Supported OpenTelemetry Signal Types
+
+The exporter should support all major OpenTelemetry signal types.
+
+## Traces
+
+Generate traces for:
+
+* Process lifecycle
+* System calls
+* Filesystem operations
+* Network activity
+* Memory events
+* Scheduler events
+* Security events
+* Resource spike investigations
+* Correlated execution chains
+* User-defined events
+
+Each trace should contain:
+
+* Trace ID
+* Span ID
+* Parent Span ID
+* Timestamp
+* Duration
+* Attributes
+* Events
+* Links
+* Status
+* Resource attributes
+
+---
+
+## Metrics
+
+Generate metrics for:
+
+CPU usage
+
+Memory usage
+
+Disk throughput
+
+Disk latency
+
+Filesystem activity
+
+Network throughput
+
+Network latency
+
+Packets sent
+
+Packets received
+
+Dropped packets
+
+Context switches
+
+Page faults
+
+Major page faults
+
+Minor page faults
+
+Interrupt counts
+
+Thread count
+
+Process count
+
+Buffer utilization
+
+Dropped telemetry
+
+Event throughput
+
+Export throughput
+
+Storage throughput
+
+Queue depth
+
+Correlation latency
+
+Analysis latency
+
+Each metric should include:
+
+* Timestamp
+* Resource attributes
+* Labels
+* Unit
+* Aggregation type
+* Instrument type
+
+---
+
+## Logs
+
+Export structured logs.
+
+Each log entry should include:
+
+Timestamp
+
+Severity
+
+Module
+
+Thread ID
+
+CPU
+
+PID
+
+Message
+
+Structured attributes
+
+Correlation ID
+
+Trace ID where applicable
+
+---
+
+# OpenTelemetry Semantic Conventions
+
+Whenever possible follow OpenTelemetry semantic conventions.
+
+Examples include:
+
+Host attributes
+
+Process attributes
+
+Container attributes
+
+Operating system attributes
+
+Filesystem attributes
+
+Network attributes
+
+Thread attributes
+
+Service attributes
+
+Resource attributes
+
+Device attributes
+
+Kernel attributes
+
+Application attributes
+
+---
+
+# OTLP Export
+
+Implement support for:
+
+OTLP over Protobuf
+
+Support:
+
+Batch export
+
+Retry logic
+
+Backoff
+
+Queueing
+
+Compression where appropriate
+
+Partial failure handling
+
+Connection recovery
+
+Timeout handling
+
+Graceful shutdown
+
+---
+
+# Protocol Buffers
+
+Use Protocol Buffers for serialization.
+
+Implement complete serialization and deserialization.
+
+Support:
+
+Schema evolution
+
+Backward compatibility
+
+Forward compatibility
+
+Version negotiation where appropriate
+
+---
+
+# Persistent Storage
+
+Every processed telemetry event should be stored locally.
+
+Storage should occur after successful normalization.
+
+Storage should preserve:
+
+Ordering
+
+Integrity
+
+Correlation metadata
+
+Resource attributes
+
+Event timestamps
+
+Analysis metadata
+
+---
+
+# Storage Requirements
+
+Implement:
+
+Append-only storage
+
+Automatic file rotation
+
+Integrity verification
+
+Crash recovery
+
+Checksums
+
+Indexing
+
+Sequential writes
+
+Efficient replay
+
+Fast searching
+
+Configurable retention
+
+Support configurable storage locations.
+
+---
+
+# Telemetry File Format
+
+Design a structured telemetry file format.
+
+Every stored event should preserve:
+
+Original timestamp
+
+Normalized timestamp
+
+Event ID
+
+Sequence number
+
+Correlation ID
+
+Event category
+
+Process metadata
+
+Thread metadata
+
+Resource attributes
+
+Payload
+
+Analysis results
+
+Export status
+
+Version
+
+Future compatibility fields
+
+The format should support future expansion without breaking compatibility.
+
+---
+
+# Telemetry Replay
+
+Implement the ability to reopen stored telemetry files.
+
+Support:
+
+Sequential replay
+
+Random access through indexes
+
+Integrity validation
+
+Summary generation
+
+Correlation reconstruction
+
+Timeline rebuilding
+
+Statistics regeneration
+
+---
+
+# Execution Summary
+
+When the application terminates:
+
+Flush all pending telemetry.
+
+Close exporters.
+
+Close storage.
+
+Verify file integrity.
+
+Reopen the generated telemetry file.
+
+Analyze every stored event.
+
+Generate a final report including:
+
+Total telemetry received
+
+Total telemetry processed
+
+Total telemetry exported
+
+Total telemetry discarded
+
+Total anomalies
+
+Total warnings
+
+Total errors
+
+Average throughput
+
+Peak throughput
+
+Average CPU usage
+
+Average memory usage
+
+Peak memory usage
+
+Maximum buffer utilization
+
+Dropped events
+
+Recovered events
+
+Detected resource spikes
+
+Detected correlations
+
+Process timelines
+
+Security observations
+
+Storage statistics
+
+Export statistics
+
+Execution duration
+
+The report should be both human-readable and machine-readable.
+
+Logging System
+
+Implement a production-quality logging subsystem.
+
+Every subsystem should log meaningful events.
+
+Support log levels:
+
+SUCCESS
+
+INFO
+
+WARNING
+
+ERROR
+
+DEBUG
+
+TRACE
+
+FATAL
+
+Terminal Output Format
+
+Display logs in real time.
+
+Examples:
+
+[+] eBPF subsystem initialized successfully
+
+[+] Ring buffer attached
+
+[+] Telemetry received
+
+[+] Event normalized
+
+[+] Event correlated
+
+[+] Event exported
+
+[+] Event written to storage
+
+[!] Buffer utilization exceeded 80%
+
+[!] Duplicate telemetry detected
+
+[!] Retrying OTLP export
+
+[-] Failed to deserialize telemetry
+
+[-] Storage write failed
+
+[-] Invalid telemetry record removed
+
+Each log should include:
+
+Timestamp
+
+Module
+
+Thread ID
+
+Severity
+
+CPU
+
+Optional Correlation ID
+
+Human-readable message
+
+Support ANSI color output.
+
+Allow colors to be disabled.
+
+Support configurable verbosity.
+
+Live Terminal Dashboard
+
+Implement a continuously updating terminal dashboard.
+
+The dashboard should update approximately once every second without excessive flickering.
+
+Display:
+
+Current CPU usage
+
+Current memory usage
+
+Current disk throughput
+
+Current network throughput
+
+Current telemetry throughput
+
+Current export throughput
+
+Current storage throughput
+
+Current buffer utilization
+
+Active telemetry sources
+
+Active probes
+
+Active processes
+
+Active threads
+
+Current anomalies
+
+Warnings
+
+Errors
+
+Dropped events
+
+Average processing latency
+
+Average export latency
+
+Average storage latency
+
+Current queue sizes
+
+Correlation engine status
+
+Exporter status
+
+Storage status
+
+Application uptime
+
+Support resizing of the terminal window gracefully.
+
+Configuration System
+
+Implement a configurable runtime configuration system.
+
+Support configuration through:
+
+Configuration file
+
+Environment variables
+
+Command-line arguments
+
+Reasonable defaults
+
+Configuration should include:
+
+Buffer size
+
+Worker thread count
+
+Export settings
+
+Storage path
+
+Log level
+
+Dashboard refresh interval
+
+Correlation windows
+
+Filtering rules
+
+Retention settings
+
+Retry settings
+
+Compression settings
+
+Performance tuning parameters
+
+Command-Line Interface
+
+Implement a complete CLI.
+
+Support options such as:
+
+Help
+
+Version
+
+Configuration file
+
+Storage location
+
+Enable dashboard
+
+Disable dashboard
+
+Enable export
+
+Disable export
+
+Enable debug logging
+
+Log level selection
+
+Buffer size override
+
+Worker count override
+
+Replay stored telemetry
+
+Verify telemetry files
+
+Print configuration
+
+The help output should be comprehensive and professionally formatted.
+
+Concurrency Architecture
+
+Design the application using multiple threads where beneficial.
+
+Possible worker threads include:
+
+Telemetry reader
+
+Telemetry decoder
+
+Normalizer
+
+Correlation engine
+
+Analysis engine
+
+Storage writer
+
+OTLP exporter
+
+Dashboard renderer
+
+Statistics collector
+
+Health monitor
+
+Configuration watcher
+
+Coordinate workers safely.
+
+Avoid race conditions.
+
+Avoid deadlocks.
+
+Minimize lock contention.
+
+Use lock-free structures where practical.
+
+Performance Optimization
+
+Optimize the entire system for production workloads.
+
+Prioritize:
+
+Low latency
+
+High throughput
+
+Cache locality
+
+Minimal heap allocations
+
+Batch processing
+
+Zero-copy transfers where feasible
+
+Efficient serialization
+
+False-sharing avoidance
+
+NUMA awareness where practical
+
+Memory reuse
+
+Avoid unnecessary system calls.
+
+Avoid unnecessary copies.
+
+Avoid unnecessary synchronization.
+
+Resource Management
+
+Every allocated resource must be released correctly.
+
+This includes:
+
+Memory
+
+Files
+
+Sockets
+
+Threads
+
+Mutexes
+
+Condition variables
+
+Semaphores
+
+Shared memory
+
+Ring buffers
+
+eBPF resources
+
+Maps
+
+Programs
+
+Links
+
+Exporters
+
+Protocol buffers
+
+Storage handles
+
+Dashboard resources
+
+Timers
+
+Signal handlers
+
+No memory leaks should exist.
+
+No file descriptor leaks should exist.
+
+Error Handling
+
+The application must never terminate unexpectedly because of malformed telemetry.
+
+Handle failures gracefully.
+
+Examples include:
+
+Buffer overflow
+
+Buffer corruption
+
+Invalid event
+
+Malformed payload
+
+Allocation failure
+
+Shared memory failure
+
+Thread creation failure
+
+Exporter failure
+
+Storage failure
+
+Serialization failure
+
+Deserialization failure
+
+Configuration errors
+
+Permission failures
+
+Missing eBPF support
+
+Kernel incompatibility
+
+Timeouts
+
+Interrupted system calls
+
+Partial writes
+
+Partial reads
+
+Filesystem full
+
+Disk unavailable
+
+Network unavailable
+
+Every failure should generate meaningful diagnostic information.
+
+Where recovery is possible, automatically recover and continue operation.
+
+Health Monitoring
+
+Implement an internal health monitoring subsystem.
+
+Continuously monitor:
+
+Worker threads
+
+Queue depths
+
+Exporter health
+
+Storage health
+
+Memory usage
+
+CPU usage
+
+Thread liveness
+
+Buffer health
+
+Configuration validity
+
+Subsystem initialization status
+
+Report unhealthy components immediately.
+
+Attempt recovery where practical.
+
+End of Part 3 of 5
+
+## MASTER PROJECT PROMPT
+
+# Part 4 of 5
+
+---
+
+# CRITICAL CODE GENERATION REQUIREMENTS
+
+The goal of this project is to generate a **complete, production-ready, fully functional software project**.
+
+This project is **NOT** intended to be:
+
+* a proof of concept
+* an example implementation
+* a tutorial
+* pseudocode
+* demonstration code
+* partially completed code
+* scaffolding
+* boilerplate
+* starter code
+* an architectural mock-up
+
+Generate code that is ready to compile, execute, debug, extend, and maintain.
+
+Assume this project will be used in a real production environment.
+
+---
+
+# Absolutely No Placeholder Code
+
+This requirement is mandatory.
+
+Do **NOT** leave unfinished implementations anywhere in the project.
+
+Never generate placeholder code.
+
+Examples of prohibited content include:
+
+```c
+// TODO
+```
+
+```c
+// Implement later
+```
+
+```c
+// Add your code here
+```
+
+```c
+// Remaining implementation omitted
+```
+
+```c
+// Placeholder
+```
+
+```c
+// ...
+```
+
+```c
+abort();
+```
+
+```c
+return NULL;
+```
+
+only because the implementation was skipped.
+
+Likewise, do **NOT** generate functions such as:
+
+```c
+void analyze_events()
+{
+    /* TODO */
+}
+```
+
+or
+
+```c
+int parse_event(...)
+{
+    return 0;
+}
+```
+
+unless that behavior is genuinely the complete and correct implementation.
+
+If a function exists, fully implement it.
+
+---
+
+# Never Replace Code with Comments
+
+Do **not** write comments describing code that should exist.
+
+Examples that are forbidden:
+
+```c
+// Parse telemetry here.
+```
+
+```c
+// Correlate events.
+```
+
+```c
+// Serialize to protobuf.
+```
+
+```c
+// Export to OTLP.
+```
+
+Instead, write the complete implementation.
+
+Every declared subsystem must contain working logic.
+
+---
+
+# No Omitted Implementations
+
+Never write statements such as:
+
+* Implementation omitted.
+* Omitted for brevity.
+* Remaining code follows the same pattern.
+* Similar implementation omitted.
+* Continue similarly.
+* Left as an exercise.
+* Example implementation.
+* Pseudocode only.
+* Stub implementation.
+* Minimal implementation.
+
+Every implementation must be complete.
+
+---
+
+# Full Project Generation
+
+Generate every file required by the project.
+
+Do not assume I will create anything manually.
+
+Generate every:
+
+Source file
+
+Header file
+
+Configuration file
+
+Documentation file
+
+Build file
+
+Test file
+
+Helper module
+
+Utility module
+
+Macro definition
+
+Constant definition
+
+Enum
+
+Struct
+
+Static helper
+
+Thread worker
+
+Parser
+
+Serializer
+
+Deserializer
+
+Logger
+
+Exporter
+
+Data structure
+
+Queue
+
+Memory manager
+
+Synchronization primitive
+
+Everything required for successful compilation should already exist.
+
+---
+
+# Project Organization
+
+Place **every project file directly inside one single project root directory**.
+
+Do **not** create subdirectories.
+
+Do **not** generate folders such as:
+
+* src
+* include
+* docs
+* tests
+* configs
+* scripts
+* examples
+* ebpf
+* build
+* cmake
+* assets
+* tools
+* third_party
+
+All files must exist directly inside the project root.
+
+---
+
+# Example Project Layout
+
+The following is an example layout.
+
+Every file exists in the same directory.
+
+```text
+telemetry-platform/
+│
+├── main.c
+├── buffer.c
+├── buffer.h
+├── ring_buffer.c
+├── ring_buffer.h
+├── telemetry.c
+├── telemetry.h
+├── parser.c
+├── parser.h
+├── decoder.c
+├── decoder.h
+├── encoder.c
+├── encoder.h
+├── analyzer.c
+├── analyzer.h
+├── correlator.c
+├── correlator.h
+├── classifier.c
+├── classifier.h
+├── normalizer.c
+├── normalizer.h
+├── filter.c
+├── filter.h
+├── process_tracker.c
+├── process_tracker.h
+├── timeline.c
+├── timeline.h
+├── scheduler.c
+├── scheduler.h
+├── resource_monitor.c
+├── resource_monitor.h
+├── filesystem_monitor.c
+├── filesystem_monitor.h
+├── network_monitor.c
+├── network_monitor.h
+├── syscall_monitor.c
+├── syscall_monitor.h
+├── anomaly_detector.c
+├── anomaly_detector.h
+├── statistics.c
+├── statistics.h
+├── metrics.c
+├── metrics.h
+├── storage.c
+├── storage.h
+├── file_writer.c
+├── file_writer.h
+├── file_reader.c
+├── file_reader.h
+├── exporter.c
+├── exporter.h
+├── otlp_client.c
+├── otlp_client.h
+├── protobuf_serializer.c
+├── protobuf_serializer.h
+├── dashboard.c
+├── dashboard.h
+├── terminal_ui.c
+├── terminal_ui.h
+├── logger.c
+├── logger.h
+├── config.c
+├── config.h
+├── cli.c
+├── cli.h
+├── memory_pool.c
+├── memory_pool.h
+├── utilities.c
+├── utilities.h
+├── platform.c
+├── platform.h
+├── macros.h
+├── constants.h
+├── types.h
+├── version.h
+├── telemetry.bpf.c
+├── telemetry.skel.h
+├── test_buffer.c
+├── test_parser.c
+├── test_storage.c
+├── test_exporter.c
+├── test_correlator.c
+├── test_dashboard.c
+├── CMakeLists.txt
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── ARCHITECTURE.md
+├── DESIGN.md
+├── TELEMETRY_FORMAT.md
+├── CONFIGURATION.md
+├── BUILD.md
+├── INSTALL.md
+├── EXAMPLES.md
+└── .gitignore
+```
+
+This layout is only a starting point.
+
+If additional files are required, create them.
+
+Every additional file must also reside in the root directory.
+
+---
+
+# Modular Design
+
+Although every file exists in one directory, the project should remain highly modular.
+
+Each subsystem should have its own implementation and interface.
+
+Avoid excessively large source files.
+
+Avoid placing unrelated functionality inside one file.
+
+Use clean interfaces.
+
+Separate responsibilities logically.
+
+---
+
+# No Empty Files
+
+Every generated file must contain meaningful content.
+
+Do not create:
+
+Empty headers
+
+Empty source files
+
+Placeholder documentation
+
+Stub tests
+
+Incomplete build scripts
+
+---
+
+# Header Files
+
+Every header should contain:
+
+Include guards (or `#pragma once`, consistently)
+
+Public declarations
+
+Type definitions
+
+Enums
+
+Macros
+
+Constants
+
+API documentation where appropriate
+
+Minimal dependencies
+
+Proper forward declarations when applicable
+
+---
+
+# Source Files
+
+Every source file should contain:
+
+Complete implementations
+
+Robust error handling
+
+Meaningful logging
+
+Memory cleanup
+
+Internal helper functions
+
+Static utilities where appropriate
+
+Clear separation between public and private APIs
+
+---
+
+# CMake Build System
+
+Generate a complete production-quality `CMakeLists.txt`.
+
+Include:
+
+C17 standard selection
+
+Compiler detection
+
+Optimization flags
+
+Debug flags
+
+Release flags
+
+Warnings enabled
+
+Static analysis support where practical
+
+Dependency discovery
+
+libbpf integration
+
+protobuf integration
+
+OpenTelemetry integration
+
+pthread linkage
+
+Install targets
+
+Packaging support
+
+CTest integration
+
+Unit test support
+
+Configuration options
+
+Export targets
+
+The project should build cleanly using CMake without requiring manual editing.
+
+---
+
+# Unit Tests
+
+Generate comprehensive unit tests.
+
+Test:
+
+Ring buffer
+
+Parser
+
+Normalizer
+
+Correlation engine
+
+Exporter
+
+Storage
+
+Statistics
+
+Configuration
+
+Memory manager
+
+Utilities
+
+Error handling
+
+Boundary conditions
+
+Failure recovery
+
+Stress conditions
+
+Invalid inputs
+
+Large payloads
+
+Concurrency where practical
+
+The tests should compile and execute successfully.
+
+---
+
+# Documentation Comments
+
+Use documentation comments where they improve maintainability.
+
+Document:
+
+Public APIs
+
+Complex algorithms
+
+Synchronization behavior
+
+Memory ownership
+
+Performance assumptions
+
+Concurrency assumptions
+
+Avoid excessive comments explaining trivial code.
+
+---
+
+# Naming Conventions
+
+Use consistent, descriptive names.
+
+Avoid cryptic abbreviations.
+
+Functions should clearly indicate their purpose.
+
+Variables should clearly indicate their role.
+
+Constants should be self-explanatory.
+
+Macros should follow consistent naming conventions.
+
+---
+
+# Coding Style
+
+Maintain one consistent coding style throughout the project.
+
+Use:
+
+Consistent indentation
+
+Consistent brace placement
+
+Consistent spacing
+
+Consistent naming
+
+Consistent file organization
+
+Consistent error handling
+
+Consistent logging style
+
+The generated project should look like it was written by a single experienced systems programmer rather than assembled from unrelated code.
+
+---
+
+# File Generation Format
+
+When generating the project, output one complete file at a time.
+
+Each file should begin with a clearly identifiable header such as:
+
+```text
+===== File: logger.c =====
+```
+
+followed immediately by the complete contents of that file.
+
+Do not interleave multiple files.
+
+Do not split a file across responses unless absolutely necessary because of response-length limits.
+
+If a file must be split due to output constraints, continue it immediately in the next response before beginning any other file.
+
+---
+
+**End of Part 4 of 5**
+
+## MASTER PROJECT PROMPT
+
+# Part 5 of 5 (Final)
+
+---
+
+# README.md Requirements
+
+Generate a **comprehensive, professional, production-quality** `README.md`.
+
+The README should be written as though it will be published as the project's primary documentation on GitHub or an internal engineering repository.
+
+It should be sufficiently detailed that a developer unfamiliar with the project can successfully build, configure, run, understand, troubleshoot, and extend the software without requiring additional documentation.
+
+The README should include, at a minimum:
+
+## Project Overview
+
+Explain:
+
+* Purpose of the project
+* High-level goals
+* Intended use cases
+* Overall architecture
+* Supported operating systems
+* Supported kernel versions
+* Supported hardware architectures
+
+---
+
+## Features
+
+Describe every major capability, including but not limited to:
+
+* eBPF telemetry collection
+* Shared memory transport
+* Ring buffer implementation
+* Event normalization
+* Event correlation
+* Behavioral analysis
+* Resource spike detection
+* Timeline reconstruction
+* OpenTelemetry support
+* OTLP export
+* Protobuf serialization
+* Local telemetry storage
+* Replay engine
+* Dashboard
+* Logging
+* Health monitoring
+* Configuration system
+* CLI
+* Unit testing
+
+---
+
+## Architecture
+
+Provide a detailed explanation of the system architecture.
+
+Include either:
+
+* an ASCII architecture diagram
+
+or
+
+* a Mermaid architecture diagram
+
+illustrating:
+
+Telemetry Probes
+
+↓
+
+Shared Memory
+
+↓
+
+Telemetry Reader
+
+↓
+
+Parser
+
+↓
+
+Normalizer
+
+↓
+
+Classifier
+
+↓
+
+Correlation Engine
+
+↓
+
+Behavior Analysis
+
+↓
+
+OpenTelemetry Export
+
+↓
+
+Persistent Storage
+
+↓
+
+Replay
+
+↓
+
+Dashboard
+
+---
+
+## Directory / File Layout
+
+Since the project intentionally uses a **single root directory**, explain the purpose of every generated file.
+
+Document every source file, header file, configuration file, build file, test file, and documentation file.
+
+---
+
+## System Requirements
+
+Specify:
+
+Required Linux version
+
+Kernel version
+
+Compiler
+
+CMake version
+
+Dependencies
+
+Privileges required for eBPF
+
+Supported hardware
+
+Recommended hardware
+
+---
+
+## Dependencies
+
+Explain every dependency.
+
+Describe:
+
+Why it is needed.
+
+How it is installed.
+
+How it is linked.
+
+---
+
+## Installation
+
+Provide complete installation instructions.
+
+Include every required command.
+
+Assume a clean Linux installation.
+
+---
+
+## Build Instructions
+
+Provide complete build commands.
+
+Include:
+
+Debug build
+
+Release build
+
+Cleaning
+
+Rebuilding
+
+Installing
+
+Running tests
+
+---
+
+## Running
+
+Document every command-line option.
+
+Provide examples.
+
+---
+
+## Configuration
+
+Document every configurable option.
+
+Include:
+
+Buffer size
+
+Export settings
+
+Storage
+
+Logging
+
+Dashboard
+
+Correlation
+
+Filtering
+
+Worker counts
+
+Retry settings
+
+Compression
+
+Retention
+
+---
+
+## Telemetry Pipeline
+
+Describe every stage of processing.
+
+Explain:
+
+Collection
+
+Validation
+
+Normalization
+
+Classification
+
+Correlation
+
+Analysis
+
+Export
+
+Storage
+
+Replay
+
+---
+
+## Shared Memory
+
+Document:
+
+Memory layout
+
+Ring buffer
+
+Synchronization
+
+Sequence numbers
+
+Overflow handling
+
+Recovery
+
+---
+
+## OpenTelemetry
+
+Explain:
+
+OTLP
+
+Protobuf
+
+Semantic conventions
+
+Resource attributes
+
+Metrics
+
+Traces
+
+Logs
+
+---
+
+## Dashboard
+
+Document every field displayed.
+
+Explain every statistic.
+
+---
+
+## Logging
+
+Document:
+
+Severity levels
+
+Formatting
+
+Configuration
+
+Examples
+
+---
+
+## Replay
+
+Explain:
+
+How stored telemetry is reopened.
+
+How integrity is verified.
+
+How replay works.
+
+How summaries are generated.
+
+---
+
+## Examples
+
+Include:
+
+Typical execution
+
+Typical logs
+
+Typical dashboard output
+
+Typical telemetry
+
+Typical configuration
+
+---
+
+## Performance
+
+Discuss:
+
+Expected throughput
+
+Expected latency
+
+Memory consumption
+
+CPU usage
+
+Optimization strategies
+
+Scaling behavior
+
+---
+
+## Troubleshooting
+
+Provide troubleshooting guidance for:
+
+Missing permissions
+
+Kernel incompatibility
+
+eBPF failures
+
+Storage failures
+
+Exporter failures
+
+Shared memory issues
+
+Configuration mistakes
+
+Performance issues
+
+---
+
+## Security Considerations
+
+Explain:
+
+Privileges
+
+Kernel interactions
+
+Memory safety
+
+Resource isolation
+
+Sensitive telemetry
+
+Export security
+
+---
+
+## Extending the Project
+
+Describe how to:
+
+Add new telemetry probes
+
+Add new exporters
+
+Add new analyzers
+
+Add new storage backends
+
+Add new telemetry schemas
+
+---
+
+## License
+
+Generate a suitable open-source license file (for example, MIT or Apache-2.0 unless otherwise specified).
+
+---
+
+## CHANGELOG
+
+Generate an initial `CHANGELOG.md`.
+
+---
+
+## CONTRIBUTING
+
+Generate a professional `CONTRIBUTING.md` describing coding standards, contribution workflow, formatting expectations, testing requirements, commit guidelines, and pull request expectations.
+
+---
+
+# Additional Documentation
+
+Generate fully written documentation files, including:
+
+* `ARCHITECTURE.md`
+* `DESIGN.md`
+* `BUILD.md`
+* `INSTALL.md`
+* `CONFIGURATION.md`
+* `TELEMETRY_FORMAT.md`
+* `EXAMPLES.md`
+
+Each document should be complete and useful. Do not leave placeholders or empty sections.
+
+---
+
+# Production Quality Standards
+
+Write the project as if it were to be deployed in a production environment.
+
+The code should emphasize:
+
+* Correctness
+* Reliability
+* Maintainability
+* Modularity
+* Thread safety
+* Memory safety
+* Robust error handling
+* Clear interfaces
+* Consistent style
+* Efficient algorithms
+* High performance
+* Defensive programming
+* Comprehensive logging
+* Proper cleanup of all resources
+
+Avoid unnecessary complexity while maintaining extensibility.
+
+---
+
+# Complete Implementation Requirement
+
+Every declared component must be fully implemented.
+
+This includes, but is not limited to:
+
+* Every source file
+* Every header file
+* Every function
+* Every helper function
+* Every data structure
+* Every parser
+* Every serializer
+* Every exporter
+* Every analyzer
+* Every utility
+* Every thread
+* Every callback
+* Every build file
+* Every configuration file
+* Every documentation file
+* Every test file
+
+No component should remain unfinished.
+
+---
+
+# Absolutely No Missing Code
+
+Do **not**:
+
+* Skip implementations.
+* Replace implementations with comments.
+* Leave placeholder code.
+* Leave empty functions.
+* Leave stub functions.
+* Leave incomplete documentation.
+* Omit files.
+* Summarize code.
+* State that code is "similar" or "follows the same pattern."
+
+If functionality is required, implement it completely.
+
+---
+
+# Response Continuation Strategy
+
+If the project exceeds the maximum response length:
+
+* Continue the project across as many responses as necessary.
+* Stop only at the end of a file whenever possible.
+* Clearly identify which files have been completed.
+* Clearly identify which file will be generated next.
+* Resume exactly where the previous response ended.
+* Continue until **every required file** has been fully generated.
+
+Never stop simply because the response limit has been reached.
+
+---
+
+# Self-Verification
+
+Before considering the project complete, verify internally that:
+
+* Every declared file exists.
+* Every declared function is implemented.
+* Every declared structure is defined.
+* Every header has matching source implementations where appropriate.
+* Every module compiles conceptually.
+* Every dependency is accounted for.
+* Every resource is properly cleaned up.
+* Every document is fully written.
+* Every test is complete.
+* The build system references all required files.
+* No placeholder comments remain.
+* No TODOs remain.
+* No intentionally omitted code remains.
+
+---
+
+# Final Deliverable
+
+The final result must be a **complete, compilable, production-ready Linux telemetry platform** written in **C17**, implementing:
+
+* Modern **eBPF CO-RE** probes
+* Shared memory transport
+* High-performance ring buffer
+* Telemetry collection
+* Event parsing
+* Event normalization
+* Event classification
+* Event enrichment
+* Correlation engine
+* Behavioral analysis
+* Resource spike detection
+* Process timeline reconstruction
+* Noise filtering and deduplication
+* OpenTelemetry integration
+* OTLP over Protocol Buffers
+* Persistent telemetry storage
+* Telemetry replay and verification
+* Live terminal dashboard
+* Structured logging
+* Health monitoring
+* Configuration system
+* Command-line interface
+* Comprehensive unit tests
+* Complete build system using CMake
+* Complete documentation
+* A fully written `README.md`
+* A single-root project layout with all files directly in the root directory
+* No placeholders
+* No omitted implementations
+* No pseudocode
+* No "implementation omitted" comments
+* No stub functions
+* No empty files
+* No missing code
+
+The project should compile (assuming the required external dependencies are installed), run, and be maintainable by professional systems programmers.
+
+**Do not stop generating until every required file has been fully implemented. If additional modules, helper files, tests, or documentation are needed during implementation, create them automatically and place them in the project root. The objective is a complete, coherent, production-quality codebase—not merely an example or scaffold.**
+
+---
+
+# END OF MASTER PROMPT
+
+This concludes the integrated specification. Together, Parts 1–5 form a single, comprehensive prompt that captures all of the requirements we've developed throughout this conversation.
+

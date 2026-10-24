@@ -1,0 +1,15 @@
+{
+"duration_seconds":1.019,
+"received":6,
+"processed":5,
+"exported":0,
+"stored":5,
+"discarded":0,
+"duplicates":1,
+"anomalies":0,
+"warnings":0,
+"errors":0,
+"dropped":0,
+"average_latency_ms":0.323,
+"max_buffer_utilization_pct":0
+}

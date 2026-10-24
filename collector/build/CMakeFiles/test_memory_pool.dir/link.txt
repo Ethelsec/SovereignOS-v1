@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/test_memory_pool.dir/link.d CMakeFiles/test_memory_pool.dir/test_memory_pool.c.o -o test_memory_pool  libcollector_core.a -lpthread /usr/lib/x86_64-linux-gnu/libz.so
