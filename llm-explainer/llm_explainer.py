@@ -190,3 +190,17 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# Add daemon mode support
+if __name__ == '__main__':
+    import sys
+    if '--daemon' in sys.argv:
+        import time
+        print("[LLM] Running in daemon mode inside seL4 component")
+        explainer = LLMExplainer()
+        while True:
+            time.sleep(5)
+            # Check buffer for anomalies to explain
+    else:
+        main()
