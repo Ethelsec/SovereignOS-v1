@@ -10,7 +10,7 @@ option(TP_ENABLE_TESTS "Build unit tests" ON)
 set(TP_SOURCES
     analyzer.c anomaly_detector.c buffer.c canonical.c classifier.c cli.c config.c correlator.c dashboard.c
     decoder.c encoder.c exporter.c file_reader.c file_writer.c filter.c filesystem_monitor.c
-    health.c ingress.c logger.c memory_pool.c metrics.c network_monitor.c normalizer.c otlp_client.c
+    health.c ingress.c logger.c memory_pool.c metrics.c netmon.c network_monitor.c normalizer.c otlp_client.c
     parser.c platform.c process_tracker.c protobuf_serializer.c resource_monitor.c ring_buffer.c
     scheduler.c statistics.c storage.c syscall_monitor.c telemetry.c terminal_ui.c timeline.c utilities.c
 )

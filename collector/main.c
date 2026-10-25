@@ -8,6 +8,7 @@
 #include "health.h"
 #include "ingress.h"
 #include "logger.h"
+#include "netmon.h"
 #include "normalizer.h"
 #include "parser.h"
 #include "platform.h"
@@ -171,9 +172,12 @@ int main(int argc, char **argv)
     }
     tp_emit_startup_events(&app.ring);
 
-    pthread_t probe, dash;
+    pthread_t probe, dash, netmon;
     tp_probe_context_t probe_ctx = { .ring = &app.ring, .running = &g_running, .interval_ms = 250 };
     pthread_create(&probe, NULL, tp_procfs_probe_thread, &probe_ctx);
+    typedef struct { tp_ring_buffer_t *ring; volatile sig_atomic_t *running; } nm_ctx_t;
+    nm_ctx_t nm = { &app.ring, &g_running };
+    pthread_create(&netmon, NULL, tp_netmon_thread, &nm);
     pthread_t *workers = calloc(app.cfg.worker_count, sizeof(*workers));
     for (size_t i = 0; i < app.cfg.worker_count; ++i) pthread_create(&workers[i], NULL, worker_thread, &app);
     pthread_create(&dash, NULL, dashboard_thread, &app);
@@ -189,6 +193,7 @@ int main(int argc, char **argv)
     g_running = 0;
     if (ingress_enabled) tp_ingress_stop(&app.ingress);
     pthread_join(probe, NULL);
+    pthread_join(netmon, NULL);
     for (size_t i = 0; i < app.cfg.worker_count; ++i) pthread_join(workers[i], NULL);
     pthread_join(dash, NULL);
     free(workers);
