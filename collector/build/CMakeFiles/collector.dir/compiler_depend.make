@@ -15,6 +15,7 @@ CMakeFiles/collector.dir/main.c.o: /home/barok/Project/gods-eye/collector/main.c
   /home/barok/Project/gods-eye/collector/health.h \
   /home/barok/Project/gods-eye/collector/ingress.h \
   /home/barok/Project/gods-eye/collector/logger.h \
+  /home/barok/Project/gods-eye/collector/netmon.h \
   /home/barok/Project/gods-eye/collector/normalizer.h \
   /home/barok/Project/gods-eye/collector/parser.h \
   /home/barok/Project/gods-eye/collector/platform.h \
@@ -204,6 +205,8 @@ libcollector_core.a:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
@@ -236,9 +239,9 @@ libcollector_core.a:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
 /usr/include/linux/sched/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/linux/posix_types.h:
 
@@ -258,15 +261,17 @@ libcollector_core.a:
 
 /usr/include/endian.h:
 
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/pthread.h:
+
 /home/barok/Project/gods-eye/collector/normalizer.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /home/barok/Project/gods-eye/collector/ingress.h:
-
-/usr/include/pthread.h:
-
-/usr/include/asm-generic/types.h:
 
 /home/barok/Project/gods-eye/collector/config.h:
 
@@ -277,8 +282,6 @@ libcollector_core.a:
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
@@ -299,8 +302,6 @@ libcollector_core.a:
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
 /usr/include/sched.h:
-
-/usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -326,9 +327,7 @@ libcollector_core.a:
 
 /home/barok/Project/gods-eye/collector/utilities.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/alloca.h:
+/usr/include/asm-generic/bitsperlong.h:
 
 /home/barok/Project/gods-eye/collector/platform.h:
 
@@ -337,6 +336,8 @@ libcollector_core.a:
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/alloca.h:
 
 CMakeFiles/collector.dir/main.c.o:
 
@@ -461,6 +462,8 @@ CMakeFiles/collector.dir/main.c.o:
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/home/barok/Project/gods-eye/collector/netmon.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 

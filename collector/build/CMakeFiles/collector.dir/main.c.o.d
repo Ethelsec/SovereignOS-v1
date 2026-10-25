@@ -116,6 +116,7 @@ CMakeFiles/collector.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /home/barok/Project/gods-eye/collector/logger.h \
+ /home/barok/Project/gods-eye/collector/netmon.h \
  /home/barok/Project/gods-eye/collector/normalizer.h \
  /home/barok/Project/gods-eye/collector/parser.h \
  /home/barok/Project/gods-eye/collector/platform.h \

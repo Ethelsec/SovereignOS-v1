@@ -366,10 +366,24 @@ CMakeFiles/collector_core.dir/metrics.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/collector_core.dir/metrics.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/barok/Project/gods-eye/collector/metrics.c -o CMakeFiles/collector_core.dir/metrics.c.s
 
+CMakeFiles/collector_core.dir/netmon.c.o: CMakeFiles/collector_core.dir/flags.make
+CMakeFiles/collector_core.dir/netmon.c.o: /home/barok/Project/gods-eye/collector/netmon.c
+CMakeFiles/collector_core.dir/netmon.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/collector_core.dir/netmon.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/netmon.c.o -MF CMakeFiles/collector_core.dir/netmon.c.o.d -o CMakeFiles/collector_core.dir/netmon.c.o -c /home/barok/Project/gods-eye/collector/netmon.c
+
+CMakeFiles/collector_core.dir/netmon.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/collector_core.dir/netmon.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/barok/Project/gods-eye/collector/netmon.c > CMakeFiles/collector_core.dir/netmon.c.i
+
+CMakeFiles/collector_core.dir/netmon.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/collector_core.dir/netmon.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/barok/Project/gods-eye/collector/netmon.c -o CMakeFiles/collector_core.dir/netmon.c.s
+
 CMakeFiles/collector_core.dir/network_monitor.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/network_monitor.c.o: /home/barok/Project/gods-eye/collector/network_monitor.c
 CMakeFiles/collector_core.dir/network_monitor.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/collector_core.dir/network_monitor.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/collector_core.dir/network_monitor.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/network_monitor.c.o -MF CMakeFiles/collector_core.dir/network_monitor.c.o.d -o CMakeFiles/collector_core.dir/network_monitor.c.o -c /home/barok/Project/gods-eye/collector/network_monitor.c
 
 CMakeFiles/collector_core.dir/network_monitor.c.i: cmake_force
@@ -383,7 +397,7 @@ CMakeFiles/collector_core.dir/network_monitor.c.s: cmake_force
 CMakeFiles/collector_core.dir/normalizer.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/normalizer.c.o: /home/barok/Project/gods-eye/collector/normalizer.c
 CMakeFiles/collector_core.dir/normalizer.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/collector_core.dir/normalizer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/collector_core.dir/normalizer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/normalizer.c.o -MF CMakeFiles/collector_core.dir/normalizer.c.o.d -o CMakeFiles/collector_core.dir/normalizer.c.o -c /home/barok/Project/gods-eye/collector/normalizer.c
 
 CMakeFiles/collector_core.dir/normalizer.c.i: cmake_force
@@ -397,7 +411,7 @@ CMakeFiles/collector_core.dir/normalizer.c.s: cmake_force
 CMakeFiles/collector_core.dir/otlp_client.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/otlp_client.c.o: /home/barok/Project/gods-eye/collector/otlp_client.c
 CMakeFiles/collector_core.dir/otlp_client.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/collector_core.dir/otlp_client.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/collector_core.dir/otlp_client.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/otlp_client.c.o -MF CMakeFiles/collector_core.dir/otlp_client.c.o.d -o CMakeFiles/collector_core.dir/otlp_client.c.o -c /home/barok/Project/gods-eye/collector/otlp_client.c
 
 CMakeFiles/collector_core.dir/otlp_client.c.i: cmake_force
@@ -411,7 +425,7 @@ CMakeFiles/collector_core.dir/otlp_client.c.s: cmake_force
 CMakeFiles/collector_core.dir/parser.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/parser.c.o: /home/barok/Project/gods-eye/collector/parser.c
 CMakeFiles/collector_core.dir/parser.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/collector_core.dir/parser.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/collector_core.dir/parser.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/parser.c.o -MF CMakeFiles/collector_core.dir/parser.c.o.d -o CMakeFiles/collector_core.dir/parser.c.o -c /home/barok/Project/gods-eye/collector/parser.c
 
 CMakeFiles/collector_core.dir/parser.c.i: cmake_force
@@ -425,7 +439,7 @@ CMakeFiles/collector_core.dir/parser.c.s: cmake_force
 CMakeFiles/collector_core.dir/platform.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/platform.c.o: /home/barok/Project/gods-eye/collector/platform.c
 CMakeFiles/collector_core.dir/platform.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/collector_core.dir/platform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/collector_core.dir/platform.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/platform.c.o -MF CMakeFiles/collector_core.dir/platform.c.o.d -o CMakeFiles/collector_core.dir/platform.c.o -c /home/barok/Project/gods-eye/collector/platform.c
 
 CMakeFiles/collector_core.dir/platform.c.i: cmake_force
@@ -439,7 +453,7 @@ CMakeFiles/collector_core.dir/platform.c.s: cmake_force
 CMakeFiles/collector_core.dir/process_tracker.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/process_tracker.c.o: /home/barok/Project/gods-eye/collector/process_tracker.c
 CMakeFiles/collector_core.dir/process_tracker.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/collector_core.dir/process_tracker.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/collector_core.dir/process_tracker.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/process_tracker.c.o -MF CMakeFiles/collector_core.dir/process_tracker.c.o.d -o CMakeFiles/collector_core.dir/process_tracker.c.o -c /home/barok/Project/gods-eye/collector/process_tracker.c
 
 CMakeFiles/collector_core.dir/process_tracker.c.i: cmake_force
@@ -453,7 +467,7 @@ CMakeFiles/collector_core.dir/process_tracker.c.s: cmake_force
 CMakeFiles/collector_core.dir/protobuf_serializer.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/protobuf_serializer.c.o: /home/barok/Project/gods-eye/collector/protobuf_serializer.c
 CMakeFiles/collector_core.dir/protobuf_serializer.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/collector_core.dir/protobuf_serializer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/collector_core.dir/protobuf_serializer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/protobuf_serializer.c.o -MF CMakeFiles/collector_core.dir/protobuf_serializer.c.o.d -o CMakeFiles/collector_core.dir/protobuf_serializer.c.o -c /home/barok/Project/gods-eye/collector/protobuf_serializer.c
 
 CMakeFiles/collector_core.dir/protobuf_serializer.c.i: cmake_force
@@ -467,7 +481,7 @@ CMakeFiles/collector_core.dir/protobuf_serializer.c.s: cmake_force
 CMakeFiles/collector_core.dir/resource_monitor.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/resource_monitor.c.o: /home/barok/Project/gods-eye/collector/resource_monitor.c
 CMakeFiles/collector_core.dir/resource_monitor.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/collector_core.dir/resource_monitor.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/collector_core.dir/resource_monitor.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/resource_monitor.c.o -MF CMakeFiles/collector_core.dir/resource_monitor.c.o.d -o CMakeFiles/collector_core.dir/resource_monitor.c.o -c /home/barok/Project/gods-eye/collector/resource_monitor.c
 
 CMakeFiles/collector_core.dir/resource_monitor.c.i: cmake_force
@@ -481,7 +495,7 @@ CMakeFiles/collector_core.dir/resource_monitor.c.s: cmake_force
 CMakeFiles/collector_core.dir/ring_buffer.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/ring_buffer.c.o: /home/barok/Project/gods-eye/collector/ring_buffer.c
 CMakeFiles/collector_core.dir/ring_buffer.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/collector_core.dir/ring_buffer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/collector_core.dir/ring_buffer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/ring_buffer.c.o -MF CMakeFiles/collector_core.dir/ring_buffer.c.o.d -o CMakeFiles/collector_core.dir/ring_buffer.c.o -c /home/barok/Project/gods-eye/collector/ring_buffer.c
 
 CMakeFiles/collector_core.dir/ring_buffer.c.i: cmake_force
@@ -495,7 +509,7 @@ CMakeFiles/collector_core.dir/ring_buffer.c.s: cmake_force
 CMakeFiles/collector_core.dir/scheduler.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/scheduler.c.o: /home/barok/Project/gods-eye/collector/scheduler.c
 CMakeFiles/collector_core.dir/scheduler.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/collector_core.dir/scheduler.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/collector_core.dir/scheduler.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/scheduler.c.o -MF CMakeFiles/collector_core.dir/scheduler.c.o.d -o CMakeFiles/collector_core.dir/scheduler.c.o -c /home/barok/Project/gods-eye/collector/scheduler.c
 
 CMakeFiles/collector_core.dir/scheduler.c.i: cmake_force
@@ -509,7 +523,7 @@ CMakeFiles/collector_core.dir/scheduler.c.s: cmake_force
 CMakeFiles/collector_core.dir/statistics.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/statistics.c.o: /home/barok/Project/gods-eye/collector/statistics.c
 CMakeFiles/collector_core.dir/statistics.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/collector_core.dir/statistics.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/collector_core.dir/statistics.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/statistics.c.o -MF CMakeFiles/collector_core.dir/statistics.c.o.d -o CMakeFiles/collector_core.dir/statistics.c.o -c /home/barok/Project/gods-eye/collector/statistics.c
 
 CMakeFiles/collector_core.dir/statistics.c.i: cmake_force
@@ -523,7 +537,7 @@ CMakeFiles/collector_core.dir/statistics.c.s: cmake_force
 CMakeFiles/collector_core.dir/storage.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/storage.c.o: /home/barok/Project/gods-eye/collector/storage.c
 CMakeFiles/collector_core.dir/storage.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/collector_core.dir/storage.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/collector_core.dir/storage.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/storage.c.o -MF CMakeFiles/collector_core.dir/storage.c.o.d -o CMakeFiles/collector_core.dir/storage.c.o -c /home/barok/Project/gods-eye/collector/storage.c
 
 CMakeFiles/collector_core.dir/storage.c.i: cmake_force
@@ -537,7 +551,7 @@ CMakeFiles/collector_core.dir/storage.c.s: cmake_force
 CMakeFiles/collector_core.dir/syscall_monitor.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/syscall_monitor.c.o: /home/barok/Project/gods-eye/collector/syscall_monitor.c
 CMakeFiles/collector_core.dir/syscall_monitor.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/collector_core.dir/syscall_monitor.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/collector_core.dir/syscall_monitor.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/syscall_monitor.c.o -MF CMakeFiles/collector_core.dir/syscall_monitor.c.o.d -o CMakeFiles/collector_core.dir/syscall_monitor.c.o -c /home/barok/Project/gods-eye/collector/syscall_monitor.c
 
 CMakeFiles/collector_core.dir/syscall_monitor.c.i: cmake_force
@@ -551,7 +565,7 @@ CMakeFiles/collector_core.dir/syscall_monitor.c.s: cmake_force
 CMakeFiles/collector_core.dir/telemetry.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/telemetry.c.o: /home/barok/Project/gods-eye/collector/telemetry.c
 CMakeFiles/collector_core.dir/telemetry.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/collector_core.dir/telemetry.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/collector_core.dir/telemetry.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/telemetry.c.o -MF CMakeFiles/collector_core.dir/telemetry.c.o.d -o CMakeFiles/collector_core.dir/telemetry.c.o -c /home/barok/Project/gods-eye/collector/telemetry.c
 
 CMakeFiles/collector_core.dir/telemetry.c.i: cmake_force
@@ -565,7 +579,7 @@ CMakeFiles/collector_core.dir/telemetry.c.s: cmake_force
 CMakeFiles/collector_core.dir/terminal_ui.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/terminal_ui.c.o: /home/barok/Project/gods-eye/collector/terminal_ui.c
 CMakeFiles/collector_core.dir/terminal_ui.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/collector_core.dir/terminal_ui.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/collector_core.dir/terminal_ui.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/terminal_ui.c.o -MF CMakeFiles/collector_core.dir/terminal_ui.c.o.d -o CMakeFiles/collector_core.dir/terminal_ui.c.o -c /home/barok/Project/gods-eye/collector/terminal_ui.c
 
 CMakeFiles/collector_core.dir/terminal_ui.c.i: cmake_force
@@ -579,7 +593,7 @@ CMakeFiles/collector_core.dir/terminal_ui.c.s: cmake_force
 CMakeFiles/collector_core.dir/timeline.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/timeline.c.o: /home/barok/Project/gods-eye/collector/timeline.c
 CMakeFiles/collector_core.dir/timeline.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/collector_core.dir/timeline.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/collector_core.dir/timeline.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/timeline.c.o -MF CMakeFiles/collector_core.dir/timeline.c.o.d -o CMakeFiles/collector_core.dir/timeline.c.o -c /home/barok/Project/gods-eye/collector/timeline.c
 
 CMakeFiles/collector_core.dir/timeline.c.i: cmake_force
@@ -593,7 +607,7 @@ CMakeFiles/collector_core.dir/timeline.c.s: cmake_force
 CMakeFiles/collector_core.dir/utilities.c.o: CMakeFiles/collector_core.dir/flags.make
 CMakeFiles/collector_core.dir/utilities.c.o: /home/barok/Project/gods-eye/collector/utilities.c
 CMakeFiles/collector_core.dir/utilities.c.o: CMakeFiles/collector_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/collector_core.dir/utilities.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/collector_core.dir/utilities.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/collector_core.dir/utilities.c.o -MF CMakeFiles/collector_core.dir/utilities.c.o.d -o CMakeFiles/collector_core.dir/utilities.c.o -c /home/barok/Project/gods-eye/collector/utilities.c
 
 CMakeFiles/collector_core.dir/utilities.c.i: cmake_force
@@ -627,6 +641,7 @@ collector_core_OBJECTS = \
 "CMakeFiles/collector_core.dir/logger.c.o" \
 "CMakeFiles/collector_core.dir/memory_pool.c.o" \
 "CMakeFiles/collector_core.dir/metrics.c.o" \
+"CMakeFiles/collector_core.dir/netmon.c.o" \
 "CMakeFiles/collector_core.dir/network_monitor.c.o" \
 "CMakeFiles/collector_core.dir/normalizer.c.o" \
 "CMakeFiles/collector_core.dir/otlp_client.c.o" \
@@ -669,6 +684,7 @@ libcollector_core.a: CMakeFiles/collector_core.dir/ingress.c.o
 libcollector_core.a: CMakeFiles/collector_core.dir/logger.c.o
 libcollector_core.a: CMakeFiles/collector_core.dir/memory_pool.c.o
 libcollector_core.a: CMakeFiles/collector_core.dir/metrics.c.o
+libcollector_core.a: CMakeFiles/collector_core.dir/netmon.c.o
 libcollector_core.a: CMakeFiles/collector_core.dir/network_monitor.c.o
 libcollector_core.a: CMakeFiles/collector_core.dir/normalizer.c.o
 libcollector_core.a: CMakeFiles/collector_core.dir/otlp_client.c.o
@@ -688,7 +704,7 @@ libcollector_core.a: CMakeFiles/collector_core.dir/timeline.c.o
 libcollector_core.a: CMakeFiles/collector_core.dir/utilities.c.o
 libcollector_core.a: CMakeFiles/collector_core.dir/build.make
 libcollector_core.a: CMakeFiles/collector_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking C static library libcollector_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C static library libcollector_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/collector_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/collector_core.dir/link.txt --verbose=$(VERBOSE)
 

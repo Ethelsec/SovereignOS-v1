@@ -1265,6 +1265,30 @@ metrics.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collector_core.dir/build.make CMakeFiles/collector_core.dir/metrics.c.s
 .PHONY : metrics.c.s
 
+netmon.o: netmon.c.o
+.PHONY : netmon.o
+
+# target to build an object file
+netmon.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collector_core.dir/build.make CMakeFiles/collector_core.dir/netmon.c.o
+.PHONY : netmon.c.o
+
+netmon.i: netmon.c.i
+.PHONY : netmon.i
+
+# target to preprocess a source file
+netmon.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collector_core.dir/build.make CMakeFiles/collector_core.dir/netmon.c.i
+.PHONY : netmon.c.i
+
+netmon.s: netmon.c.s
+.PHONY : netmon.s
+
+# target to generate assembly for a file
+netmon.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collector_core.dir/build.make CMakeFiles/collector_core.dir/netmon.c.s
+.PHONY : netmon.c.s
+
 network_monitor.o: network_monitor.c.o
 .PHONY : network_monitor.o
 
@@ -2084,6 +2108,9 @@ help:
 	@echo "... metrics.o"
 	@echo "... metrics.i"
 	@echo "... metrics.s"
+	@echo "... netmon.o"
+	@echo "... netmon.i"
+	@echo "... netmon.s"
 	@echo "... network_monitor.o"
 	@echo "... network_monitor.i"
 	@echo "... network_monitor.s"

@@ -152,12 +152,12 @@ clean: CMakeFiles/test_ingress.dir/clean
 CMakeFiles/collector_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collector_core.dir/build.make CMakeFiles/collector_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collector_core.dir/build.make CMakeFiles/collector_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target collector_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Built target collector_core"
 .PHONY : CMakeFiles/collector_core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/collector_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/collector_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/collector_core.dir/rule
@@ -169,7 +169,7 @@ collector_core: CMakeFiles/collector_core.dir/rule
 # codegen rule for target.
 CMakeFiles/collector_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collector_core.dir/build.make CMakeFiles/collector_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Finished codegen for target collector_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Finished codegen for target collector_core"
 .PHONY : CMakeFiles/collector_core.dir/codegen
 
 # clean rule for target.
@@ -189,7 +189,7 @@ CMakeFiles/collector.dir/all: CMakeFiles/collector_core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/collector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/collector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/collector.dir/rule
@@ -1112,12 +1112,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/test_buffer.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_buffer.dir/build.make CMakeFiles/test_buffer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_buffer.dir/build.make CMakeFiles/test_buffer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=42,43 "Built target test_buffer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=43,44 "Built target test_buffer"
 .PHONY : CMakeFiles/test_buffer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_buffer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_buffer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_buffer.dir/rule
@@ -1129,7 +1129,7 @@ test_buffer: CMakeFiles/test_buffer.dir/rule
 # codegen rule for target.
 CMakeFiles/test_buffer.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_buffer.dir/build.make CMakeFiles/test_buffer.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=42,43 "Finished codegen for target test_buffer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=43,44 "Finished codegen for target test_buffer"
 .PHONY : CMakeFiles/test_buffer.dir/codegen
 
 # clean rule for target.
@@ -1144,12 +1144,12 @@ CMakeFiles/test_buffer.dir/clean:
 CMakeFiles/test_parser.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=60,61 "Built target test_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=61,62 "Built target test_parser"
 .PHONY : CMakeFiles/test_parser.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_parser.dir/rule
@@ -1161,7 +1161,7 @@ test_parser: CMakeFiles/test_parser.dir/rule
 # codegen rule for target.
 CMakeFiles/test_parser.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=60,61 "Finished codegen for target test_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=61,62 "Finished codegen for target test_parser"
 .PHONY : CMakeFiles/test_parser.dir/codegen
 
 # clean rule for target.
@@ -1176,12 +1176,12 @@ CMakeFiles/test_parser.dir/clean:
 CMakeFiles/test_storage.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=62,63 "Built target test_storage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=63,64 "Built target test_storage"
 .PHONY : CMakeFiles/test_storage.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_storage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_storage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_storage.dir/rule
@@ -1193,7 +1193,7 @@ test_storage: CMakeFiles/test_storage.dir/rule
 # codegen rule for target.
 CMakeFiles/test_storage.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=62,63 "Finished codegen for target test_storage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=63,64 "Finished codegen for target test_storage"
 .PHONY : CMakeFiles/test_storage.dir/codegen
 
 # clean rule for target.
@@ -1208,12 +1208,12 @@ CMakeFiles/test_storage.dir/clean:
 CMakeFiles/test_exporter.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=52,53 "Built target test_exporter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=53,54 "Built target test_exporter"
 .PHONY : CMakeFiles/test_exporter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_exporter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_exporter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_exporter.dir/rule
@@ -1225,7 +1225,7 @@ test_exporter: CMakeFiles/test_exporter.dir/rule
 # codegen rule for target.
 CMakeFiles/test_exporter.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=52,53 "Finished codegen for target test_exporter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=53,54 "Finished codegen for target test_exporter"
 .PHONY : CMakeFiles/test_exporter.dir/codegen
 
 # clean rule for target.
@@ -1240,12 +1240,12 @@ CMakeFiles/test_exporter.dir/clean:
 CMakeFiles/test_correlator.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_correlator.dir/build.make CMakeFiles/test_correlator.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_correlator.dir/build.make CMakeFiles/test_correlator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=48,49 "Built target test_correlator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=49,50 "Built target test_correlator"
 .PHONY : CMakeFiles/test_correlator.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_correlator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_correlator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_correlator.dir/rule
@@ -1257,7 +1257,7 @@ test_correlator: CMakeFiles/test_correlator.dir/rule
 # codegen rule for target.
 CMakeFiles/test_correlator.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_correlator.dir/build.make CMakeFiles/test_correlator.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=48,49 "Finished codegen for target test_correlator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=49,50 "Finished codegen for target test_correlator"
 .PHONY : CMakeFiles/test_correlator.dir/codegen
 
 # clean rule for target.
@@ -1272,12 +1272,12 @@ CMakeFiles/test_correlator.dir/clean:
 CMakeFiles/test_dashboard.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dashboard.dir/build.make CMakeFiles/test_dashboard.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dashboard.dir/build.make CMakeFiles/test_dashboard.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=50,51 "Built target test_dashboard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=51,52 "Built target test_dashboard"
 .PHONY : CMakeFiles/test_dashboard.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_dashboard.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_dashboard.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_dashboard.dir/rule
@@ -1289,7 +1289,7 @@ test_dashboard: CMakeFiles/test_dashboard.dir/rule
 # codegen rule for target.
 CMakeFiles/test_dashboard.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dashboard.dir/build.make CMakeFiles/test_dashboard.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=50,51 "Finished codegen for target test_dashboard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=51,52 "Finished codegen for target test_dashboard"
 .PHONY : CMakeFiles/test_dashboard.dir/codegen
 
 # clean rule for target.
@@ -1304,12 +1304,12 @@ CMakeFiles/test_dashboard.dir/clean:
 CMakeFiles/test_configuration.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_configuration.dir/build.make CMakeFiles/test_configuration.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_configuration.dir/build.make CMakeFiles/test_configuration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=46,47 "Built target test_configuration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=47,48 "Built target test_configuration"
 .PHONY : CMakeFiles/test_configuration.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_configuration.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_configuration.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_configuration.dir/rule
@@ -1321,7 +1321,7 @@ test_configuration: CMakeFiles/test_configuration.dir/rule
 # codegen rule for target.
 CMakeFiles/test_configuration.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_configuration.dir/build.make CMakeFiles/test_configuration.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=46,47 "Finished codegen for target test_configuration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=47,48 "Finished codegen for target test_configuration"
 .PHONY : CMakeFiles/test_configuration.dir/codegen
 
 # clean rule for target.
@@ -1336,12 +1336,12 @@ CMakeFiles/test_configuration.dir/clean:
 CMakeFiles/test_memory_pool.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_memory_pool.dir/build.make CMakeFiles/test_memory_pool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_memory_pool.dir/build.make CMakeFiles/test_memory_pool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=58,59 "Built target test_memory_pool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=59,60 "Built target test_memory_pool"
 .PHONY : CMakeFiles/test_memory_pool.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_memory_pool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_memory_pool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_memory_pool.dir/rule
@@ -1353,7 +1353,7 @@ test_memory_pool: CMakeFiles/test_memory_pool.dir/rule
 # codegen rule for target.
 CMakeFiles/test_memory_pool.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_memory_pool.dir/build.make CMakeFiles/test_memory_pool.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=58,59 "Finished codegen for target test_memory_pool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=59,60 "Finished codegen for target test_memory_pool"
 .PHONY : CMakeFiles/test_memory_pool.dir/codegen
 
 # clean rule for target.
@@ -1368,12 +1368,12 @@ CMakeFiles/test_memory_pool.dir/clean:
 CMakeFiles/test_utilities.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_utilities.dir/build.make CMakeFiles/test_utilities.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_utilities.dir/build.make CMakeFiles/test_utilities.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=64,65 "Built target test_utilities"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=65,66 "Built target test_utilities"
 .PHONY : CMakeFiles/test_utilities.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_utilities.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_utilities.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_utilities.dir/rule
@@ -1385,7 +1385,7 @@ test_utilities: CMakeFiles/test_utilities.dir/rule
 # codegen rule for target.
 CMakeFiles/test_utilities.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_utilities.dir/build.make CMakeFiles/test_utilities.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=64,65 "Finished codegen for target test_utilities"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=65,66 "Finished codegen for target test_utilities"
 .PHONY : CMakeFiles/test_utilities.dir/codegen
 
 # clean rule for target.
@@ -1400,12 +1400,12 @@ CMakeFiles/test_utilities.dir/clean:
 CMakeFiles/test_ingest_pipeline.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ingest_pipeline.dir/build.make CMakeFiles/test_ingest_pipeline.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ingest_pipeline.dir/build.make CMakeFiles/test_ingest_pipeline.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=54,55 "Built target test_ingest_pipeline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=55,56 "Built target test_ingest_pipeline"
 .PHONY : CMakeFiles/test_ingest_pipeline.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_ingest_pipeline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_ingest_pipeline.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_ingest_pipeline.dir/rule
@@ -1417,7 +1417,7 @@ test_ingest_pipeline: CMakeFiles/test_ingest_pipeline.dir/rule
 # codegen rule for target.
 CMakeFiles/test_ingest_pipeline.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ingest_pipeline.dir/build.make CMakeFiles/test_ingest_pipeline.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=54,55 "Finished codegen for target test_ingest_pipeline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=55,56 "Finished codegen for target test_ingest_pipeline"
 .PHONY : CMakeFiles/test_ingest_pipeline.dir/codegen
 
 # clean rule for target.
@@ -1432,12 +1432,12 @@ CMakeFiles/test_ingest_pipeline.dir/clean:
 CMakeFiles/test_canonical.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_canonical.dir/build.make CMakeFiles/test_canonical.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_canonical.dir/build.make CMakeFiles/test_canonical.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=44,45 "Built target test_canonical"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=45,46 "Built target test_canonical"
 .PHONY : CMakeFiles/test_canonical.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_canonical.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_canonical.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_canonical.dir/rule
@@ -1449,7 +1449,7 @@ test_canonical: CMakeFiles/test_canonical.dir/rule
 # codegen rule for target.
 CMakeFiles/test_canonical.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_canonical.dir/build.make CMakeFiles/test_canonical.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=44,45 "Finished codegen for target test_canonical"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=45,46 "Finished codegen for target test_canonical"
 .PHONY : CMakeFiles/test_canonical.dir/codegen
 
 # clean rule for target.
@@ -1464,12 +1464,12 @@ CMakeFiles/test_canonical.dir/clean:
 CMakeFiles/test_ingress.dir/all: CMakeFiles/collector_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ingress.dir/build.make CMakeFiles/test_ingress.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ingress.dir/build.make CMakeFiles/test_ingress.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=56,57 "Built target test_ingress"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=57,58 "Built target test_ingress"
 .PHONY : CMakeFiles/test_ingress.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_ingress.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_ingress.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barok/Project/gods-eye/collector/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_ingress.dir/rule
@@ -1481,7 +1481,7 @@ test_ingress: CMakeFiles/test_ingress.dir/rule
 # codegen rule for target.
 CMakeFiles/test_ingress.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ingress.dir/build.make CMakeFiles/test_ingress.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=56,57 "Finished codegen for target test_ingress"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/barok/Project/gods-eye/collector/build/CMakeFiles --progress-num=57,58 "Finished codegen for target test_ingress"
 .PHONY : CMakeFiles/test_ingress.dir/codegen
 
 # clean rule for target.

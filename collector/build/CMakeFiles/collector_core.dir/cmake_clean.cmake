@@ -41,6 +41,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/collector_core.dir/memory_pool.c.o.d"
   "CMakeFiles/collector_core.dir/metrics.c.o"
   "CMakeFiles/collector_core.dir/metrics.c.o.d"
+  "CMakeFiles/collector_core.dir/netmon.c.o"
+  "CMakeFiles/collector_core.dir/netmon.c.o.d"
   "CMakeFiles/collector_core.dir/network_monitor.c.o"
   "CMakeFiles/collector_core.dir/network_monitor.c.o.d"
   "CMakeFiles/collector_core.dir/normalizer.c.o"

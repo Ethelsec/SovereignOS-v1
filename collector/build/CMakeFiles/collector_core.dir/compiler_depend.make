@@ -1741,6 +1741,149 @@ CMakeFiles/collector_core.dir/metrics.c.o: /home/barok/Project/gods-eye/collecto
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h
 
+CMakeFiles/collector_core.dir/netmon.c.o: /home/barok/Project/gods-eye/collector/netmon.c \
+  /home/barok/Project/gods-eye/collector/constants.h \
+  /home/barok/Project/gods-eye/collector/logger.h \
+  /home/barok/Project/gods-eye/collector/ring_buffer.h \
+  /home/barok/Project/gods-eye/collector/types.h \
+  /home/barok/Project/gods-eye/collector/utilities.h \
+  /usr/include/alloca.h \
+  /usr/include/arpa/inet.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/sched/types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
+  /usr/include/netinet/in.h \
+  /usr/include/netinet/ip.h \
+  /usr/include/netinet/tcp.h \
+  /usr/include/netinet/udp.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/signal.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/time.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/in.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdatomic.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h \
+  /usr/lib/linux/uapi/x86/asm/bitsperlong.h \
+  /usr/lib/linux/uapi/x86/asm/posix_types.h \
+  /usr/lib/linux/uapi/x86/asm/posix_types_64.h \
+  /usr/lib/linux/uapi/x86/asm/socket.h \
+  /usr/lib/linux/uapi/x86/asm/sockios.h \
+  /usr/lib/linux/uapi/x86/asm/types.h
+
 CMakeFiles/collector_core.dir/network_monitor.c.o: /home/barok/Project/gods-eye/collector/network_monitor.c \
   /home/barok/Project/gods-eye/collector/constants.h \
   /home/barok/Project/gods-eye/collector/network_monitor.h \
@@ -3264,510 +3407,524 @@ CMakeFiles/collector_core.dir/utilities.c.o: /home/barok/Project/gods-eye/collec
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h:
 
-/home/barok/Project/gods-eye/collector/utilities.c:
+/usr/lib/gcc/x86_64-linux-gnu/15/include/limits.h:
 
-/home/barok/Project/gods-eye/collector/timeline.h:
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/home/barok/Project/gods-eye/collector/timeline.c:
+/home/barok/Project/gods-eye/collector/correlator.h:
 
-/home/barok/Project/gods-eye/collector/terminal_ui.h:
+/home/barok/Project/gods-eye/collector/cli.h:
 
-/home/barok/Project/gods-eye/collector/terminal_ui.c:
+/home/barok/Project/gods-eye/collector/correlator.c:
 
-/home/barok/Project/gods-eye/collector/syscall_monitor.h:
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/home/barok/Project/gods-eye/collector/syscall_monitor.c:
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
-/home/barok/Project/gods-eye/collector/storage.c:
+/usr/include/x86_64-linux-gnu/sys/poll.h:
 
-/home/barok/Project/gods-eye/collector/scheduler.c:
+/home/barok/Project/gods-eye/collector/cli.c:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/home/barok/Project/gods-eye/collector/classifier.c:
+
+/home/barok/Project/gods-eye/collector/constants.h:
+
+/usr/lib/linux/uapi/x86/asm/socket.h:
+
+/usr/lib/linux/uapi/x86/asm/bitsperlong.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/asm-generic/socket.h:
+
+/home/barok/Project/gods-eye/collector/analyzer.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/home/barok/Project/gods-eye/collector/encoder.h:
+
+/home/barok/Project/gods-eye/collector/encoder.c:
+
+/usr/lib/linux/uapi/x86/asm/sockios.h:
+
+/usr/include/sched.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/linux/sched/types.h:
+
+/usr/include/pthread.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/home/barok/Project/gods-eye/collector/file_reader.c:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/home/barok/Project/gods-eye/collector/logger.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
+
+/home/barok/Project/gods-eye/collector/anomaly_detector.c:
+
+/home/barok/Project/gods-eye/collector/network_monitor.c:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_ext.h:
+
+/home/barok/Project/gods-eye/collector/file_reader.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
+
+/home/barok/Project/gods-eye/collector/storage.h:
+
+/home/barok/Project/gods-eye/collector/decoder.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/stdlib.h:
+
+/home/barok/Project/gods-eye/collector/version.h:
+
+/home/barok/Project/gods-eye/collector/analyzer.c:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/home/barok/Project/gods-eye/collector/ring_buffer.c:
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stdatomic.h:
 
-/home/barok/Project/gods-eye/collector/resource_monitor.c:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-/home/barok/Project/gods-eye/collector/protobuf_serializer.c:
+/home/barok/Project/gods-eye/collector/telemetry.h:
 
-/usr/include/x86_64-linux-gnu/sys/signalfd.h:
+/home/barok/Project/gods-eye/collector/statistics.h:
 
-/usr/include/libgen.h:
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
-/home/barok/Project/gods-eye/collector/platform.h:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/home/barok/Project/gods-eye/collector/parser.c:
+/usr/include/asm-generic/int-ll64.h:
 
-/home/barok/Project/gods-eye/collector/otlp_client.c:
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/home/barok/Project/gods-eye/collector/normalizer.c:
+/usr/include/x86_64-linux-gnu/sys/stat.h:
 
-/home/barok/Project/gods-eye/collector/scheduler.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/home/barok/Project/gods-eye/collector/network_monitor.h:
+/home/barok/Project/gods-eye/collector/utilities.h:
 
-/usr/include/limits.h:
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/home/barok/Project/gods-eye/collector/resource_monitor.h:
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/home/barok/Project/gods-eye/collector/metrics.c:
+/home/barok/Project/gods-eye/collector/statistics.c:
 
-/usr/lib/linux/uapi/x86/asm/unistd_64.h:
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
-/usr/include/x86_64-linux-gnu/bits/syscall.h:
+/usr/include/linux/posix_types.h:
 
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
-/usr/include/x86_64-linux-gnu/sys/socket.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/home/barok/Project/gods-eye/collector/process_tracker.c:
+
+/usr/include/ctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/lib/linux/uapi/x86/asm/posix_types.h:
+
+/home/barok/Project/gods-eye/collector/buffer.c:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/home/barok/Project/gods-eye/collector/canonical.h:
+
+/usr/include/x86_64-linux-gnu/sys/un.h:
+
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/sys/utsname.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/home/barok/Project/gods-eye/collector/metrics.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h:
+
+/usr/include/signal.h:
+
+/usr/include/strings.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/home/barok/Project/gods-eye/collector/health.c:
+
+/home/barok/Project/gods-eye/collector/filesystem_monitor.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/home/barok/Project/gods-eye/collector/types.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h:
+
+/home/barok/Project/gods-eye/collector/macros.h:
+
+/usr/include/features.h:
+
+/home/barok/Project/gods-eye/collector/protobuf_serializer.h:
+
+/home/barok/Project/gods-eye/collector/decoder.c:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/home/barok/Project/gods-eye/collector/normalizer.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/lib/linux/uapi/x86/asm/posix_types_64.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/home/barok/Project/gods-eye/collector/dashboard.h:
+
+/home/barok/Project/gods-eye/collector/classifier.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
+
+/usr/include/getopt.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/home/barok/Project/gods-eye/collector/file_writer.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/home/barok/Project/gods-eye/collector/parser.h:
+
+/usr/lib/linux/uapi/x86/asm/types.h:
+
+/home/barok/Project/gods-eye/collector/memory_pool.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/features-time64.h:
+
+/home/barok/Project/gods-eye/collector/health.h:
+
+/usr/include/linux/limits.h:
+
+/usr/lib/linux/uapi/x86/asm/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/netinet/ip.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/linux/uapi/x86/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/home/barok/Project/gods-eye/collector/process_tracker.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/home/barok/Project/gods-eye/collector/exporter.h:
+
+/home/barok/Project/gods-eye/collector/anomaly_detector.h:
+
+/home/barok/Project/gods-eye/collector/file_writer.c:
+
+/home/barok/Project/gods-eye/collector/platform.c:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/home/barok/Project/gods-eye/collector/logger.c:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/home/barok/Project/gods-eye/collector/filter.c:
+
+/home/barok/Project/gods-eye/collector/filter.h:
+
+/home/barok/Project/gods-eye/collector/ingress.c:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/fcntl.h:
+
+/home/barok/Project/gods-eye/collector/config.h:
+
+/usr/include/x86_64-linux-gnu/bits/utsname.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/x86_64-linux-gnu/bits/cloexec.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/home/barok/Project/gods-eye/collector/telemetry.c:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/home/barok/Project/gods-eye/collector/memory_pool.c:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
+/home/barok/Project/gods-eye/collector/exporter.c:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+
+/home/barok/Project/gods-eye/collector/ingress.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx.h:
+
+/home/barok/Project/gods-eye/collector/ring_buffer.h:
+
+/usr/include/x86_64-linux-gnu/bits/signalfd.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/home/barok/Project/gods-eye/collector/config.c:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/signalfd.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket_type.h:
-
-/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/stat.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/home/barok/Project/gods-eye/collector/memory_pool.c:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/x86_64-linux-gnu/bits/fcntl.h:
-
-/home/barok/Project/gods-eye/collector/telemetry.c:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/cloexec.h:
-
-/usr/include/x86_64-linux-gnu/bits/utsname.h:
-
-/usr/include/linux/stat.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/errno.h:
-
-/usr/include/asm-generic/sockios.h:
-
-/usr/include/asm-generic/errno.h:
-
-/home/barok/Project/gods-eye/collector/ingress.c:
-
-/home/barok/Project/gods-eye/collector/otlp_client.h:
-
-/home/barok/Project/gods-eye/collector/filter.h:
-
-/home/barok/Project/gods-eye/collector/filter.c:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/home/barok/Project/gods-eye/collector/ingress.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/home/barok/Project/gods-eye/collector/logger.c:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/linux/close_range.h:
-
-/home/barok/Project/gods-eye/collector/platform.c:
-
-/home/barok/Project/gods-eye/collector/filesystem_monitor.c:
-
-/home/barok/Project/gods-eye/collector/file_writer.c:
-
-/home/barok/Project/gods-eye/collector/exporter.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/limits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/usr/lib/linux/uapi/x86/asm/errno.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/stdint.h:
-
-/usr/include/poll.h:
-
-/home/barok/Project/gods-eye/collector/health.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/home/barok/Project/gods-eye/collector/memory_pool.h:
-
-/usr/lib/linux/uapi/x86/asm/types.h:
-
-/home/barok/Project/gods-eye/collector/parser.h:
-
-/home/barok/Project/gods-eye/collector/process_tracker.h:
-
-/home/barok/Project/gods-eye/collector/canonical.c:
-
-/home/barok/Project/gods-eye/collector/file_writer.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/usr/include/getopt.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
-/home/barok/Project/gods-eye/collector/dashboard.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/poll.h:
-
-/home/barok/Project/gods-eye/collector/normalizer.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/home/barok/Project/gods-eye/collector/decoder.c:
-
-/home/barok/Project/gods-eye/collector/anomaly_detector.h:
-
-/usr/include/features.h:
-
-/home/barok/Project/gods-eye/collector/buffer.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/home/barok/Project/gods-eye/collector/macros.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h:
-
-/home/barok/Project/gods-eye/collector/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/home/barok/Project/gods-eye/collector/filesystem_monitor.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/strings.h:
-
-/home/barok/Project/gods-eye/collector/health.c:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h:
-
-/home/barok/Project/gods-eye/collector/metrics.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/signal.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/sys/utsname.h:
-
-/usr/include/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/x86_64-linux-gnu/sys/syscall.h:
-
-/usr/include/x86_64-linux-gnu/sys/un.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
-/home/barok/Project/gods-eye/collector/canonical.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
-
-/home/barok/Project/gods-eye/collector/buffer.c:
-
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
-/usr/lib/linux/uapi/x86/asm/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/ctype.h:
-
-/home/barok/Project/gods-eye/collector/process_tracker.c:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/home/barok/Project/gods-eye/collector/config.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/home/barok/Project/gods-eye/collector/statistics.c:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/sys/stat.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/unistd.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/home/barok/Project/gods-eye/collector/statistics.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stdatomic.h:
-
-/home/barok/Project/gods-eye/collector/classifier.h:
-
-/home/barok/Project/gods-eye/collector/telemetry.h:
-
-/home/barok/Project/gods-eye/collector/analyzer.c:
-
-/home/barok/Project/gods-eye/collector/version.h:
-
-/usr/include/linux/types.h:
-
-/usr/lib/linux/uapi/x86/asm/posix_types_64.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h:
-
-/usr/lib/linux/uapi/x86/asm/unistd.h:
-
-/usr/include/linux/falloc.h:
-
-/home/barok/Project/gods-eye/collector/decoder.h:
-
-/home/barok/Project/gods-eye/collector/storage.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
-
-/home/barok/Project/gods-eye/collector/file_reader.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/home/barok/Project/gods-eye/collector/network_monitor.c:
-
-/home/barok/Project/gods-eye/collector/anomaly_detector.c:
-
-/home/barok/Project/gods-eye/collector/utilities.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/alloca.h:
-
-/usr/include/stdlib.h:
-
-/home/barok/Project/gods-eye/collector/logger.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/home/barok/Project/gods-eye/collector/file_reader.c:
-
-/home/barok/Project/gods-eye/collector/ring_buffer.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/pthread.h:
-
-/usr/include/linux/sched/types.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/sched.h:
-
-/usr/lib/linux/uapi/x86/asm/sockios.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/home/barok/Project/gods-eye/collector/encoder.c:
-
-/home/barok/Project/gods-eye/collector/encoder.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/home/barok/Project/gods-eye/collector/analyzer.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/asm-generic/socket.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/lib/linux/uapi/x86/asm/bitsperlong.h:
-
-/usr/lib/linux/uapi/x86/asm/socket.h:
-
-/home/barok/Project/gods-eye/collector/constants.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/home/barok/Project/gods-eye/collector/classifier.c:
-
-/home/barok/Project/gods-eye/collector/exporter.c:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/home/barok/Project/gods-eye/collector/cli.c:
-
-/usr/include/x86_64-linux-gnu/sys/poll.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+/usr/include/x86_64-linux-gnu/sys/socket.h:
 
 /home/barok/Project/gods-eye/collector/dashboard.c:
 
-/home/barok/Project/gods-eye/collector/config.c:
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
-/home/barok/Project/gods-eye/collector/correlator.c:
+/usr/lib/linux/uapi/x86/asm/unistd_64.h:
 
-/usr/include/stdio.h:
+/home/barok/Project/gods-eye/collector/metrics.c:
 
-/home/barok/Project/gods-eye/collector/cli.h:
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/home/barok/Project/gods-eye/collector/correlator.h:
+/home/barok/Project/gods-eye/collector/resource_monitor.h:
 
-/home/barok/Project/gods-eye/collector/protobuf_serializer.h:
+/usr/include/limits.h:
+
+/home/barok/Project/gods-eye/collector/netmon.c:
+
+/home/barok/Project/gods-eye/collector/network_monitor.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll.h:
+
+/home/barok/Project/gods-eye/collector/scheduler.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/netinet/tcp.h:
+
+/home/barok/Project/gods-eye/collector/filesystem_monitor.c:
+
+/usr/include/netinet/udp.h:
+
+/home/barok/Project/gods-eye/collector/terminal_ui.c:
+
+/usr/include/linux/falloc.h:
+
+/usr/include/x86_64-linux-gnu/bits/in.h:
+
+/home/barok/Project/gods-eye/collector/timeline.h:
+
+/usr/include/x86_64-linux-gnu/bits/syscall.h:
+
+/home/barok/Project/gods-eye/collector/normalizer.c:
+
+/home/barok/Project/gods-eye/collector/otlp_client.c:
+
+/home/barok/Project/gods-eye/collector/parser.c:
+
+/home/barok/Project/gods-eye/collector/platform.h:
+
+/usr/include/linux/stat.h:
+
+/usr/include/libgen.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/home/barok/Project/gods-eye/collector/canonical.c:
+
+/usr/include/x86_64-linux-gnu/sys/signalfd.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/home/barok/Project/gods-eye/collector/protobuf_serializer.c:
+
+/home/barok/Project/gods-eye/collector/resource_monitor.c:
+
+/home/barok/Project/gods-eye/collector/ring_buffer.c:
+
+/home/barok/Project/gods-eye/collector/scheduler.c:
+
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
+
+/home/barok/Project/gods-eye/collector/storage.c:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/home/barok/Project/gods-eye/collector/syscall_monitor.c:
+
+/home/barok/Project/gods-eye/collector/otlp_client.h:
+
+/home/barok/Project/gods-eye/collector/syscall_monitor.h:
+
+/home/barok/Project/gods-eye/collector/buffer.h:
+
+/home/barok/Project/gods-eye/collector/terminal_ui.h:
+
+/home/barok/Project/gods-eye/collector/timeline.c:
+
+/home/barok/Project/gods-eye/collector/utilities.c:

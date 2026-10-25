@@ -29,6 +29,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/barok/Project/gods-eye/collector/logger.c" "CMakeFiles/collector_core.dir/logger.c.o" "gcc" "CMakeFiles/collector_core.dir/logger.c.o.d"
   "/home/barok/Project/gods-eye/collector/memory_pool.c" "CMakeFiles/collector_core.dir/memory_pool.c.o" "gcc" "CMakeFiles/collector_core.dir/memory_pool.c.o.d"
   "/home/barok/Project/gods-eye/collector/metrics.c" "CMakeFiles/collector_core.dir/metrics.c.o" "gcc" "CMakeFiles/collector_core.dir/metrics.c.o.d"
+  "/home/barok/Project/gods-eye/collector/netmon.c" "CMakeFiles/collector_core.dir/netmon.c.o" "gcc" "CMakeFiles/collector_core.dir/netmon.c.o.d"
   "/home/barok/Project/gods-eye/collector/network_monitor.c" "CMakeFiles/collector_core.dir/network_monitor.c.o" "gcc" "CMakeFiles/collector_core.dir/network_monitor.c.o.d"
   "/home/barok/Project/gods-eye/collector/normalizer.c" "CMakeFiles/collector_core.dir/normalizer.c.o" "gcc" "CMakeFiles/collector_core.dir/normalizer.c.o.d"
   "/home/barok/Project/gods-eye/collector/otlp_client.c" "CMakeFiles/collector_core.dir/otlp_client.c.o" "gcc" "CMakeFiles/collector_core.dir/otlp_client.c.o.d"
